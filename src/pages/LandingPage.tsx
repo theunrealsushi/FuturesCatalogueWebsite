@@ -158,7 +158,7 @@ function useSequentialTypewriter(paragraphs: string[], ready: boolean, speed = 5
 const narrativeDescriptions = {
   regulated: "dgakhdhahdlhaildhilsahdilhaihd.",
   techno: "kcbjksabjbjabjbjbjb.",
-  crafted: "Cooperative-owned, hand-made, community-governed. A marketplace built around craft, care, and shared ritual.",
+  crafted: "Hello from the other crafty side",
 };
 
 export default function LandingPage() {
