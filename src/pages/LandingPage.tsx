@@ -260,7 +260,6 @@ export default function LandingPage() {
                     className="font-medium leading-tight uppercase"
                     style={{ color: narrative.secondary, fontFamily: MONO, fontSize: "14px" }}
                   >
-                    // "{narrative.tagline}" //
                   </p>
                 </div>
 

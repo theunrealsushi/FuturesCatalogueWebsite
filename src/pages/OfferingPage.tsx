@@ -402,15 +402,7 @@ function InlineDossier({ description, shortDescription, accentColor, ingredients
         } as object}
       >
         {fullText}
-      </div>
-      <button
-        onClick={() => setExpanded((v) => !v)}
-        className="mt-2 text-[10px] tracking-widest uppercase transition-opacity hover:opacity-70"
-        style={{ color: accentColor, fontFamily: MONO }}
-      >
-        {expanded ? "[ − COLLAPSE ]" : "[ + EXPAND DOSSIER ]"}
-      </button>
-      {ingredients && ingredients.length > 0 && (
+          {ingredients && ingredients.length > 0 && (
         <div className="mt-6 pt-5" style={{ borderTop: "1px solid rgba(255,255,255,0.08)" }}>
           <div className="text-[10px] tracking-[0.25em] uppercase mb-3" style={{ color: accentColor, fontFamily: MONO }}>
             Ingredient Declaration // EU Reg. 2047/NUT-06
@@ -425,6 +417,15 @@ function InlineDossier({ description, shortDescription, accentColor, ingredients
           </ul>
         </div>
       )}
+      </div>
+      <button
+        onClick={() => setExpanded((v) => !v)}
+        className="mt-2 text-[10px] tracking-widest uppercase transition-opacity hover:opacity-70"
+        style={{ color: accentColor, fontFamily: MONO }}
+      >
+        {expanded ? "[ − COLLAPSE ]" : "[ + EXPAND DOSSIER ]"}
+      </button>
+    
     </div>
   );
 }

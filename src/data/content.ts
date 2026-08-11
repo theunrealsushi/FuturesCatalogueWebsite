@@ -28,12 +28,12 @@ export interface Narrative {
   secondary: string;
   feel: string;
   categories: Category[];
-}
+} 
 
 const regulated: Narrative = {
   id: "regulated",
   name: "Regulated Future",
-  tagline: "Certified. Compliant. Complete.",
+  tagline: "",
   description: "A structured marketplace governed by the Finnish Consumer Authority for Nutritive Beverages. Every product, service and event is approved, tracked and accountable. This marketplace imagines a future where coffee has shifted from a habit that Finland's residents take for granted, into a scarce and regulated commodity. Coffee is  treated as something that carries environmental, cultural and economic value, in a world now dealing with the consequences of unchecked and linear economic growth. The narrative highlights inequality, with the wealthy people able to continue enjoying café culture, while others have limited access to coffee. The underground coffee networks reveal resistance to government control and a desire to preserve the rich, third wave coffee culture that looked so promising a few decades ago. Overall, the fiction suggests that in the future, climate pressures may transform everyday pleasures into controlled luxuries, forcing society to rethink consumption.",
   heroSubtext: "Procurement Portal v14.2 ",
   accent: "#c04a2a",
@@ -172,7 +172,7 @@ const regulated: Narrative = {
 const techno: Narrative = {
   id: "techno",
   name: "Technosolutionist Future",
-  tagline: "Optimise. Automate. Elevate.",
+  tagline: "",
   description: "The smart marketplace for next-generation beverage innovation. Discover AI-formulated products, precision automation services, and the community powering the fourth-wave coffee revolution.",
   heroSubtext: "Powered by Kahvi Intelligence Engine™ — Real-time personalisation active",
   accent: "#d4b84a",
@@ -314,7 +314,7 @@ const techno: Narrative = {
 const crafted: Narrative = {
   id: "crafted",
   name: "Crafted Future",
-  tagline: "Grown. Brewed. Shared.",
+  tagline: "",
   description: "A cooperative marketplace rooted in Finnish craft tradition. Every offering is made by hand, grown with care, or built around shared experience — nothing here is scaled beyond what one person can know.",
   heroSubtext: "Collectively owned — member-governed since 2041",
   accent: "#5a3f35",
