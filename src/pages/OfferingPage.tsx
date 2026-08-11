@@ -523,7 +523,7 @@ export default function OfferingPage() {
             >
               <div>
                 <div className="text-xs text-[#e8e6e1]/30 mb-1" style={{ fontFamily: isRegulated ? MONO : undefined }}>
-                  {isRegulated ? "RATION PRICE // VAT INCLUDED" : "Price"}
+                  {isRegulated ? "PRICE PER 250G // VAT INCLUDED" : "Price"}
                 </div>
                 <div className="text-2xl font-semibold" style={{ color: narrative.accent, fontFamily: isRegulated ? MONO : undefined }}>
                   {offering.price}
@@ -585,7 +585,7 @@ export default function OfferingPage() {
                   <path d="M8 1l1.8 3.6L14 5.2l-3 2.9.7 4.1L8 10.3l-3.7 1.9.7-4.1-3-2.9 4.2-.6L8 1z" stroke="currentColor" strokeWidth="1.2" />
                 </svg>
                 <span style={{ fontFamily: isRegulated || isTechno ? MONO : undefined }}>
-                  {isRegulated ? "ESPR CERTIFIED · TRACEABILITY HASH ON-CHAIN" : isTechno ? "SITRA DPP VERIFIED · GENOMIC BATCH CERTIFIED" : "Verified by Kahvi 2050 quality assurance"}
+                  {isRegulated ? "ESPR CERTIFIED BY CIRCULAR DATA LAB FINLAND" : isTechno ? "SITRA DPP VERIFIED · GENOMIC BATCH CERTIFIED" : "Verified by Kahvi 2050 quality assurance"}
                 </span>
               </div>
               <div className="flex items-center gap-3 text-xs text-[#e8e6e1]/40">

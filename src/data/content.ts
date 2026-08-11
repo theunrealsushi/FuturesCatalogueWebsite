@@ -60,11 +60,8 @@ const regulated: Narrative = {
             "Fermented mycoprotein base (Fusarium venenatum, EU-approved strain MYC-2047)",
             "Chicory root extract (Cichorium intybus, certified organic)",
             "Roasted barley malt (Hordeum vulgare)",
-            "Adaptogenic ashwagandha (Withania somnifera, standardised 5% withanolides)",
-            "Caffeine isolate (synthetic, EU Reg. 2044/NUT-06, 80mg/serving)",
             "Natural arabica aroma compounds (synthetic-identical, ref. AROMA-FI-2049-391)",
             "Stabiliser: sunflower lecithin (E322)",
-            "pH regulator: potassium carbonate (E501)",
           ],
         },
         {

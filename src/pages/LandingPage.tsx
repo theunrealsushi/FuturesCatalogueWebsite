@@ -156,9 +156,9 @@ function useSequentialTypewriter(paragraphs: string[], ready: boolean, speed = 5
 
 
 const narrativeDescriptions = {
-  regulated: "dgakhdhahdlhaildhilsahdilhaihd.",
-  techno: "kcbjksabjbjabjbjbjb.",
-  crafted: "Hello from the other crafty side",
+  regulated: "Coffee is a scarce and regulated commodity tha carries economic, enviornmental and cultural value. Climate pressures transform everyday pleasures into controlled luxuries, forcing society to rethink consumption.",
+  techno: "A world that is trying to leverage technology to live a comfortable life within planetary boundaries. Coffee continues to be central to life, but becomes more intentionally consumed, or rather, “dosed”.",
+  crafted: "A world where coffee is highly valued, not just for its functional properties or scarcity, but for its inherent social properties. Coffee is an everyday luxury, purchased intentionally.",
 };
 
 export default function LandingPage() {

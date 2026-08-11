@@ -53,12 +53,9 @@ export default function CompatibilityModal({ onClose }: CompatibilityModalProps)
         {/* Body — system sans */}
         <div className="flex flex-col gap-3">
           <p className="text-sm leading-relaxed" style={{ color: "#8B949E", fontFamily: BODY }}>
-            Your device lacks a 2047 Neural Agent Handshake protocol. Advanced features like spatial haptics, instant molecular synthesis ordering, and live carbon budget syncing are disabled.
+            Your device lacks the 2047 Agent Handshake protocol. Features like spatial haptics and live voice are disabled. Some advanced features such as Live Carbon Budgeting may not display correctly.  
           </p>
-          <p className="text-sm leading-relaxed" style={{ color: "#8B949E", fontFamily: BODY }}>
-            You are entering as an un-synced guest in{" "}
-            <span style={{ color: "#C9D1D9" }}>2D Read-Only Mode</span>.
-          </p>
+        
         </div>
 
         {/* Checklist — mono */}
@@ -77,8 +74,9 @@ export default function CompatibilityModal({ onClose }: CompatibilityModalProps)
             ENVIRONMENT DIAGNOSTICS
           </div>
           {[
-            { icon: "!", label: "Personal AI Agent", status: "NOT DETECTED (Fallback to Manual Input)", ok: false },
+            { icon: "!", label: "Personal AI Agent", status: "NOT DETECTED (Fallback to Human Input)", ok: false },
             { icon: "!", label: "Spatial Haptic Render", status: "DISABLED (Hardware Incompatible)", ok: false },
+            { icon: "!", label: "Voice Render", status: "DISABLED (Hardware Incompatible)", ok: false },
             { icon: "✓", label: "Static 2D Catalogue View", status: "ENABLED", ok: true },
           ].map(({ icon, label, status, ok }) => (
             <div key={label} className="flex items-center gap-3">
