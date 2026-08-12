@@ -169,7 +169,7 @@ const techno: Narrative = {
   tagline: "",
   description: "The smart marketplace for next-generation beverage innovation. Discover AI-formulated products, precision automation services, and the community powering the fourth-wave coffee revolution.This narrative imagines a future where coffee continues to be central to life, but becomes more intentionally consumed, or rather, “dosed”. Scientific developments move at a rapid pace, inspired by a new era of space exploration, making sophisticated technology accessible to anyone on earth who can afford it. AI is peripheral to these developments, being utilized only for narrow, functional tasks. The presented values of energy conservation, circularity and optimisation, all have fingerprints of a world that is trying to leverage technology to live a comfortable life within planetary boundaries. Technology also acts as a connector in old or new ways, as humans still value social relationships with other humans. In addition to this, technology is also widely used to connect with animals and plants. This technologically managed future comes with trade-offs – unprecedented personal data collection and inevitable adoption by humans who cannot afford to be left behind.",
   heroSubtext: "Powered by Kahvi Intelligence Engine™ — Real-time personalisation active",
-  accent: "#d4b84a",
+  accent: "#66B8AC",
   secondary: "#5f7a6e",
   feel: "sleek",
   categories: [
@@ -295,7 +295,7 @@ const crafted: Narrative = {
   tagline: "",
   description: "A cooperative marketplace rooted in Finnish craft tradition. Every offering is made by hand, grown with care, or built around shared experience — nothing here is scaled beyond what one person can know.",
   heroSubtext: "Collectively owned — member-governed since 2041",
-  accent: "#5a3f35",
+  accent: "#D4B84A",
   secondary: "#5f7a6e",
   feel: "warm",
   categories: [
