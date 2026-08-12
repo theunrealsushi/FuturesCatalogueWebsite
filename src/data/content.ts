@@ -43,7 +43,7 @@ const regulated: Narrative = {
     {
       id: "products",
       name: "Products",
-      description: "Approved nutritive beverage products meeting all 2049 EU Circular Standards. Each item carries a verified traceability certificate.",
+     
       offerings: [
         {
           id: "delicious-alternatives",
@@ -51,8 +51,8 @@ const regulated: Narrative = {
           shortDescription: "A coffee alternative so delicious you forget what the original thing tasted like.",
           description: [
             "The blend replicates the mouthfeel, aroma signature, and stimulant profile of pre-collapse arabica at a fraction of the ecological cost.",
-            "Available in three approved roast variants: Nordic Light (ref. NL-04), Balanced (ref. BA-11), and Dark Functional (ref. DF-22).",
-            ""
+            "Available in three approved roast variants: Light, Balanced and Dark",
+        
           ],
           price: "€18.50",
           ctaLabel: "Add to Procurement Cart",
@@ -66,12 +66,11 @@ const regulated: Narrative = {
         },
         {
           id: "blends",
-          name: "Blends",
-          shortDescription: "Curated multi-origin certified blends assembled quarterly by the National Beverage Standards Institute.",
+          name: "Heritage Blends",
+          shortDescription: "Take page from the past and give chicory and barley blends a try, curated for that vintage feel.",
           description: [
-            "Each quarterly Blend release is assembled by the National Beverage Standards Institute from a pool of pre-approved single-origin stocks. The 2050 Q2 release — Blend 07-B — combines fermented oat extract, adaptogenic chicory root, and a 12% certified robusta derivative sourced from the Vertical Estates of Tampere.",
-            "Blends carry a limited-batch identification code printed on each unit. Provenance data — including extraction date, processor ID, and transport chain — is accessible by scanning the QR matrix on the packaging with any registered device.",
-            "Available in 200g and 500g formats. Subscription allocation is prioritised for Tier 2 and above account holders. Public stock releases occur on the first Tuesday of each month."
+            "Formulated by a group of experts from the International Coffee Organization, and homegrown in Finland. Delicious flavour profile with reduced caffeine dependency. Shelf-stable for up to 18 months.",
+           
           ],
           price: "€24.00",
           ctaLabel: "Check Availability",
@@ -81,16 +80,16 @@ const regulated: Narrative = {
     {
       id: "services",
       name: "Services",
-      description: "Licensed beverage preparation and data services operating under the 2048 Finnish Service Provision Act. All providers are bonded and regularly inspected.",
+      
       offerings: [
         {
           id: "bean-dispensary",
           name: "The Bean Dispensary",
-          shortDescription: "Automated licensed dispensary terminals providing precision-dosed nutritive beverages at certified preparation points across Helsinki.",
+          shortDescription: "Beans are sold unpackaged in dispensaries run by the Finnish Coffee Roasters Association.",
           description: [
-            "The Bean Dispensary is a network of 214 certified preparation terminals operating under Dispensary Licence D-2049-FI-007. Each terminal is calibrated weekly by a registered technician and maintains a real-time quality log accessible to the Finnish Consumer Authority.",
-            "Users authenticate via their Kahvi 2050 ID before dispensing. Dosage is personalised based on registered health data and daily intake quota as defined by the National Nutritive Beverage Framework 2048. Single-use biocompostable cups are provided at no additional charge.",
-            "Terminal locations are displayed on the Kahvi 2050 approved vendor map. New locations are subject to a 90-day licensing review before activation. Priority access is available for registered commercial account holders."
+            "The Finnish Coffee Bean Dispensary is a network of 214 certified stores across Finland.",
+            "Users authenticate before dispensing. Customers bring their own containers or purchase single-use bio-compostable jars at an additional charge.",
+            "Store locations are displayed on the Kahvi 2050 approved vendor map."
           ],
           price: "€3.20 / serving",
 
@@ -101,9 +100,8 @@ const regulated: Narrative = {
           name: "Kahvi Museo",
           shortDescription: "A state-registered heritage experience documenting the pre-Collapse history of coffee cultivation and trade in Finland.",
           description: [
-            "Kahvi Museo is a certified cultural heritage service operating under the Museum Act (2045 revision). The experience spans three licensed exhibition halls in the former Paulig facility in Vuosaari, now administered by the Helsinki Cultural Heritage Authority.",
-            "The permanent collection documents the full lifecycle of pre-Collapse coffee culture — from colonial trade routes through the Scandinavian third-wave movement to the regulatory transition period of 2031–2038. All interpretive materials have been reviewed by the National Content Standards Board.",
-            "Group bookings of eight or more must submit a Cultural Access Request form at least 14 days in advance. Educational institutions qualify for the subsidised access rate of €4.50 per student. Individual passes are available on a first-come allocation basis each morning from 09:00."
+            "Tampere-based Kahvi Museo documents the full lifecycle of coffee culture, from colonial trade routes through the Scandinavian third-wave movement to the present-day regulatory transition period and post-extractivism.",
+            "Interactive activities include discovering the origin of beans and learning about coffee addiction through an in-house escape room. Kahvi Museo is a certified cultural heritage service."
           ],
           price: "€12.00 / person",
           ctaLabel: "Book a Visit",
@@ -111,23 +109,22 @@ const regulated: Narrative = {
         {
           id: "very-berry",
           name: "Very Berry",
-          shortDescription: "Licensed Nordic berry infusion service using only foraged and cultivated berries from approved Finnish estates.",
+          shortDescription: "Very-berry is Finland’s signature circular economy café with 6 locations in the capital region.",
           description: [
-            "Very Berry operates under the Forage and Cultivar Licensing Scheme (FCLS-2047). All berry stocks are sourced exclusively from estates holding current FCLS certification, with provenance verified at each harvest point via the national agricultural telemetry system.",
-            "The service offers both prepared infusion (hot and cold), and a subscription delivery option for home preparation kits. Each kit contains dried berry blends, a reusable stainless preparation vessel, and a printed care and compliance card detailing acceptable preparation parameters.",
-            "Very Berry infusions are classified as a supplementary nutritive beverage under the Finnish Nutritive Beverage Framework and do not count toward the daily coffee-equivalent allocation. Available at licensed preparation points city-wide."
+            "Drinks and snacks utilise all parts from the coffee process, from cascara syrups to coffee leaf chips.",
+            "Get immersed in the tropical décor and feel like you have been transported to real coffee farm.",
           ],
           price: "€5.80 / serving",
           ctaLabel: "Subscribe to Deliveries",
         },
         {
-          id: "circular-data-lab",
-          name: "Circular Data Lab",
-          shortDescription: "Regulatory-grade data services for beverage supply chain traceability and circular economy compliance reporting.",
+          id: "finnish-environmental-data-lab",
+          name: "Finnish Environmental Data Lab",
+          shortDescription: "Finnish Environmental Data Lab (FEDL) designs circular benchmarks for industries and discovers best practices through analysis of big data.",
           description: [
-            "Circular Data Lab provides the computational infrastructure that underpins Kahvi 2050's traceability commitments. Enterprise clients use the Lab's API suite to generate, store, and submit supply chain records required under EU Circular Economy Regulation 2047/88.",
-            "Services include: batch provenance ledger, carbon offset calculation and certification, waste stream reporting, and automated compliance submission to the Finnish Environment Institute. All data is stored on servers located within the EU under Tier 3 jurisdictional agreements.",
-            "Pricing is tiered by API call volume and organisation size. Public sector clients are eligible for subsidised rate agreements. Data sovereignty guarantees are provided in writing as part of all contracts over €5,000 annually."
+            "While the effects of climate change, raw material availability and pollution are continuously monitored FEDL aims to transition to closed-loop systems through evidence-based research. ",
+            "Services include batch origin ledger, carbon offset calculation and certification, waste stream reporting, and automated compliance submissions.",
+            "Ledgers are powered by Blobchain 4.0. Visit FEDL’s Website to see all available services. "
           ],
           price: "From €280.00 / month",
           ctaLabel: "Request a Demo",
@@ -150,16 +147,13 @@ const regulated: Narrative = {
     {
       id: "events",
       name: "Events",
-      description: "Approved public and professional events listed under the National Events Register for Nutritive Beverage Culture.",
       offerings: [
         {
-          id: "ive-been-underground",
-          name: "I've Been Underground",
-          shortDescription: "A licensed immersive experience exploring the informal coffee trade networks that operated during the Transition Period of 2031–2038.",
+          id: "ive-bean-underground",
+          name: "Bean Underground",
+          shortDescription: "When coffee becomes regulated and hard to source, a young, underground movement erupts, hosting parties with smuggled beans and exploring rituals from different parts of the world.",
           description: [
-            "I've Been Underground is a state-approved immersive experience produced in partnership with the Finnish Memory Archive and the Helsinki Cultural Heritage Authority. It documents the informal distribution networks and social rituals that sustained coffee culture during the years when commercial supply collapsed and regulatory frameworks had not yet formed.",
-            "The experience takes place across three levels of the former Cable Factory basement and lasts approximately 90 minutes. It has received a Cultural Content Classification of C-III (mature themes, archival material, simulated environments). Participants must be 16 or over.",
-            "Tickets are allocated through a monthly public ballot. Unsuccessful applicants receive priority entry in the following month's ballot. Group cultural access subsidies are available for registered community organisations and schools."
+            "*need to figure out where to put this because technically this is illegal :)"
           ],
           price: "€28.00 / person",
           ctaLabel: "Enter the Ballot",
