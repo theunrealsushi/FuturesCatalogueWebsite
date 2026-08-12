@@ -167,7 +167,7 @@ const techno: Narrative = {
   id: "techno",
   name: "Technosolutionist Future",
   tagline: "",
-  description: "The smart marketplace for next-generation beverage innovation. Discover AI-formulated products, precision automation services, and the community powering the fourth-wave coffee revolution.",
+  description: "The smart marketplace for next-generation beverage innovation. Discover AI-formulated products, precision automation services, and the community powering the fourth-wave coffee revolution.This narrative imagines a future where coffee continues to be central to life, but becomes more intentionally consumed, or rather, “dosed”. Scientific developments move at a rapid pace, inspired by a new era of space exploration, making sophisticated technology accessible to anyone on earth who can afford it. AI is peripheral to these developments, being utilized only for narrow, functional tasks. The presented values of energy conservation, circularity and optimisation, all have fingerprints of a world that is trying to leverage technology to live a comfortable life within planetary boundaries. Technology also acts as a connector in old or new ways, as humans still value social relationships with other humans. In addition to this, technology is also widely used to connect with animals and plants. This technologically managed future comes with trade-offs – unprecedented personal data collection and inevitable adoption by humans who cannot afford to be left behind.",
   heroSubtext: "Powered by Kahvi Intelligence Engine™ — Real-time personalisation active",
   accent: "#d4b84a",
   secondary: "#5f7a6e",
@@ -176,16 +176,13 @@ const techno: Narrative = {
     {
       id: "products",
       name: "Products",
-      description: "Hardware and formulations engineered for peak performance. Every product is data-backed, iteratively improved, and optimised for the human-technology interface.",
       offerings: [
         {
           id: "post-consumer-nutrients-2",
           name: "Post Consumer Nutrients 2",
-          shortDescription: "Second-generation closed-loop nutrient recovery system. Full home integration with the Kahvi Intelligence dashboard.",
+          shortDescription: "Coffee grounds are collected and analysed for their properties, such as oils, nutrients and pigments that can be useful for other industries.",
           description: [
-            "Post Consumer Nutrients 2 is the residential counterpart to enterprise-grade circular processing. The PCN2 home unit — a 28cm countertop device — processes up to 800g of spent grounds per week into a nutrient slurry deployable directly through compatible smart garden or balcony planter systems via the Kahvi Home API.",
-            "The unit learns from your preparation patterns to predict recovery cycles, notifying you when the processing chamber is ready. Integration with the Kahvi Intelligence Engine provides a live carbon impact dashboard, showing your cumulative offset in real time.",
-            "PCN2 requires a one-time installation calibration performed remotely by a certified Kahvi technician. Units are covered by a 5-year smart warranty — hardware faults are diagnosed automatically and parts dispatched before you notice the problem."
+            ""
           ],
           price: "€349.00",
           ctaLabel: "Order Now",
@@ -193,11 +190,9 @@ const techno: Narrative = {
         {
           id: "zero-gravity-coffee",
           name: "Zero Gravity Coffee",
-          shortDescription: "Micro-pressurised beverage pods engineered for preparation in low-gravity and high-altitude environments.",
+          shortDescription: "A self-brewing coffee mug with vaccuum technology. Invented for space. Now available for everyone.",
           description: [
-            "Zero Gravity Coffee was developed in collaboration with the European Space Habitat Authority for use aboard orbital stations and high-altitude research facilities. The sealed extraction pod uses a two-chamber micro-pressurisation system that requires no heating element — exothermic reaction is triggered by chamber activation.",
-            "The 2050 civilian release retains the original engineering for earth-based use cases: no power source required, preparation in under 90 seconds, and a shelf life of 8 years from manufacture date. Ideal for expeditions, remote work environments, and serious preparedness planning.",
-            "Available in four profiles: Concentrate, Filtered, Cold Extraction, and Stimulant-Free. Pods are fully compostable within 12 weeks in standard municipal composting conditions. Minimum order: 12 pods."
+            ""
           ],
           price: "€38.00 / 12 pods",
           ctaLabel: "Add to Cart",
@@ -205,11 +200,9 @@ const techno: Narrative = {
         {
           id: "dr-device",
           name: "Dr. Device",
-          shortDescription: "Biometric-integrated smart brewer that adjusts extraction parameters based on your real-time physiological data.",
+          shortDescription: "Your smart watch or health ring has a code that can be scanned to read your health profiles.",
           description: [
-            "Dr. Device is the most advanced home brewing system on the market. It pairs with your registered health wearable to read cortisol levels, sleep debt, and hydration status before each preparation cycle, then adjusts brew temperature, extraction time, caffeine concentration, and flavour profile accordingly.",
-            "The companion app maintains a longitudinal record of your consumption patterns and physiological responses, generating weekly insight reports and monthly recommendations. Over time, Dr. Device learns your optimal preparation windows and will proactively suggest when not to brew.",
-            "Dr. Device is compatible with all Kahvi 2050 certified pods and grounds. It requires a stable network connection and a registered Kahvi Intelligence account. Health data is processed on-device and never leaves your local network without explicit consent."
+            ""
           ],
           price: "€620.00",
           ctaLabel: "Configure Your Device",
@@ -236,23 +229,18 @@ const techno: Narrative = {
         {
           id: "paradigm-shift-infusions-bar",
           name: "Paradigm Shift Infusions Bar",
-          shortDescription: "A precision infusion experience designed by AI and delivered by calibrated automation at the Punavuori Innovation District.",
-          description: [
-            "Paradigm Shift is Helsinki's first fully AI-designed infusion bar. The menu — updated every 14 days by the Kahvi Intelligence Engine — responds to aggregate seasonal health data, atmospheric conditions, and collective preference signals drawn from the Kahvi Intelligence community network.",
-            "Each infusion is prepared by a Paradigm Shift automated brewing arm to a tolerance of ±0.3°C and ±0.4g. Human staff are present for experience support, allergen queries, and edge-case troubleshooting. No item on the menu has ever been prepared the same way twice.",
-            "Walk-ins are welcome during off-peak hours (10:00–12:00, 14:30–16:30). Peak-hour slots require a 15-minute advance reservation through the app. The bar operates a no-cash policy; payment via Kahvi Wallet or registered SEPA account only."
-          ],
+          shortDescription: "A smoothie and mocktails bar that offers post-consumer nutrient infusions, including coffee.",
+          description: ["Walk-ins are welcome during off-peak hours (10:00–12:00, 14:30–16:30). Peak-hour slots require a 15-minute advance reservation through the app.",      
+            ],          
           price: "€9.50–€18.00",
           ctaLabel: "Reserve a Slot",
         },
         {
           id: "hologram-farmer",
           name: "Hologram Farmer",
-          shortDescription: "A live holographic consultation service connecting you with agronomists overseeing vertical coffee cultivation in real time.",
+          shortDescription: "A hologram coffee farmer from sits across the table from you at a café and tells you about their life, their kids, their aspirations and struggles.",
           description: [
-            "Hologram Farmer provides direct access to the agronomists managing Kahvi 2050's partner vertical estates. Sessions are conducted via high-fidelity holographic projection — the agronomist appears life-size in your home or workspace, with their farm environment rendered in the background.",
-            "Sessions are available in Finnish, Swedish, and English. Topics covered include: varietal selection, home cultivation guidance, estate sourcing stories, and customised growing plans for balcony and indoor setups. Each session produces a written summary and a personalised cultivation plan.",
-            "Sessions last 45 minutes. A recording is available for 30 days after the session via your account. Group sessions of up to 6 participants are available at a discounted rate. Equipment requirement: a Holo-Ready display device or compatible headset."
+          ""
           ],
           price: "€55.00 / session",
           ctaLabel: "Book a Session",
@@ -260,11 +248,9 @@ const techno: Narrative = {
         {
           id: "robot-barista",
           name: "Robot Barista",
-          shortDescription: "On-demand robotic barista deployment for events, offices, and installations. Precision at scale.",
+          shortDescription: "An AI enabled system at cafés takes orders, makes recommendations, brews espresso shots and orders new coffee when its out. It can tailor the caffeine, acidity and fat content to suit your health profile.",
           description: [
-            "Robot Barista offers single-day and multi-day deployments of Kahvi 2050's autonomous preparation units. Each unit is a self-contained, mobile platform capable of producing up to 180 servings per hour across a menu of 24 preparation styles.",
-            "The unit arrives pre-calibrated for your event profile — guest volume, preparation preference distribution, and serving window — derived from data you provide during booking. On-site technical support is provided for deployments over 300 guests.",
-            "Robot Barista units require a standard 240V supply and a 1.5m × 1.5m footprint. They operate in temperatures between 5°C and 35°C. Custom branding wraps are available for an additional fee. All spent grounds are collected and processed post-event via Post Consumer Nutrients."
+            ""
           ],
           price: "From €480.00 / day",
           ctaLabel: "Get a Quote",
@@ -274,14 +260,13 @@ const techno: Narrative = {
     {
       id: "community",
       name: "Community",
-      description: "The network where the fourth-wave community builds, shares, and solves. Membership unlocks early access, co-creation tools, and collective intelligence.",
+      description: "A fourth-wave coffee community builds, shares, and solves. Membership unlocks early access, co-creation tools, and collective intelligence.",
       offerings: [
         {
           id: "internood-community",
           name: "Internood Community",
-          shortDescription: "A global peer network for technologists working at the intersection of food systems, automation, and beverage culture.",
+          shortDescription: "A global fourth-wave community of farmers, business owners, technologists and innovators working at the intersection of agriculture, drink innovation and beverage culture.",
           description: [
-            "Internood Community is a members-only network of 12,400 practitioners — engineers, agronomists, product designers, data scientists, and operations specialists — working across the food technology and beverage automation sectors. Founded in 2044, it has become the primary informal knowledge exchange for the field.",
             "Membership includes: access to the Internood private forum, a monthly digest of pre-publication research, priority tickets to Kahvi 2050 events, and a profile in the community directory. Members regularly collaborate on open-source tooling, share job opportunities, and peer-review each other's technical work.",
             "Applications are reviewed monthly. Applicants are asked to provide a brief professional biography and a short statement of interest. 80% of applications are accepted. Student memberships are available at a reduced rate for registered higher education students."
           ],
@@ -291,11 +276,9 @@ const techno: Narrative = {
         {
           id: "tech-forests",
           name: "Tech Forests",
-          shortDescription: "A distributed citizen science initiative maintaining Finland's experimental agroforestry plots using sensor networks and collective data stewardship.",
+          shortDescription: "A forest ecosystem planted by human technologists and managed by mushrooms.",
           description: [
-            "Tech Forests is a participatory science programme connecting 3,200 volunteer stewards to 47 experimental agroforestry plots distributed across the Finnish archipelago, Lapland, and the Tampere hinterland. Each plot is instrumented with a dense sensor network measuring soil chemistry, microclimate, canopy density, and biodiversity indicators.",
-            "Stewards commit to one monitoring visit per month and contribute observations via the Tech Forests app. All data is processed by the Kahvi Intelligence Engine and published as open datasets quarterly. Three peer-reviewed papers citing Tech Forests data have been published in 2049 alone.",
-            "Participation is free. Stewards receive a monthly data digest for their assigned plot, an annual steward report, and invitation to the yearly in-person gathering. Travel grants are available for stewards travelling more than 150km to participate."
+            ""
           ],
           price: "Free — open enrolment",
           ctaLabel: "Join the Programme",
