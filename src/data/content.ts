@@ -302,6 +302,7 @@ const crafted: Narrative = {
     {
       id: "services",
       name: "Services",
+      description: "",
       offerings: [
         {
           id: "bean-dispensary-2",
@@ -368,6 +369,7 @@ const crafted: Narrative = {
     {
       id: "events",
       name: "Events",
+      description: "",
       offerings: [
         {
           id: "coffee-ritual-workshops",
@@ -401,7 +403,7 @@ const crafted: Narrative = {
             "Cynical Trials is a blind-tasting competition with a twist: the judging criteria change with each round, the materials are undisclosed until after judging, and the scoring system is redesigned each year by the previous year's winner. The result is a tournament that rewards genuine sensory acuity while actively resisting the kind of reverence that makes these things tedious.",
             "The event runs over one day and is open to all — no prior competitive experience is required or advantaged. Participants taste, score, and discuss. Past materials have included preparations from unexpected origins, unusual processing methods, and at least one round featuring something that was not coffee at all.",
             "Entry includes all tasting materials, a printed tournament booklet, lunch, and an evening meal. Previous winners receive a commemorative object of the outgoing winner's choosing. The event sells out within hours of opening — join the notification list early."
-         ],
+          ],
           price: "€55.00 / person",
           ctaLabel: "Join the Notification List",
         },
@@ -410,6 +412,7 @@ const crafted: Narrative = {
     {
       id: "community",
       name: "Community",
+      description: "",
       offerings: [
         {
           id: "barista-exchange",
