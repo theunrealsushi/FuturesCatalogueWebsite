@@ -293,8 +293,8 @@ const crafted: Narrative = {
   id: "crafted",
   name: "Crafted Future",
   tagline: "",
-  description: "A cooperative marketplace rooted in Finnish craft tradition. Every offering is made by hand, grown with care, or built around shared experience — nothing here is scaled beyond what one person can know.",
-  heroSubtext: "Collectively owned — member-governed since 2041",
+  description: "A cooperative marketplace rooted in Finnish craft. Coffee is highly valued, not just for its functional properties or scarcity, but for its inherent social properties. The moments in which coffee is consumed are elevated, and time feels stretched. While there is no explicit mention of coffee scarcity, the high prices, the dispensary model, and gratefulness to the producers and pollinators alike, points to a world that is slowly recovering from the harshest effects of climate change. There is no way forward but to create post-extractive systems with space built-in for reflection.",
+  heroSubtext: "Collectively owned and collectively elevated",
   accent: "#D4B84A",
   secondary: "#5f7a6e",
   feel: "warm",
@@ -302,7 +302,6 @@ const crafted: Narrative = {
     {
       id: "services",
       name: "Services",
-      description: "Craft preparation and community services, each rooted in a specific skill, place, or practice. All providers are cooperative members.",
       offerings: [
         {
           id: "bean-dispensary-2",
@@ -369,7 +368,6 @@ const crafted: Narrative = {
     {
       id: "events",
       name: "Events",
-      description: "Gatherings, rituals, and shared experiences organised by and for the cooperative community. Participation over performance.",
       offerings: [
         {
           id: "coffee-ritual-workshops",
@@ -403,7 +401,7 @@ const crafted: Narrative = {
             "Cynical Trials is a blind-tasting competition with a twist: the judging criteria change with each round, the materials are undisclosed until after judging, and the scoring system is redesigned each year by the previous year's winner. The result is a tournament that rewards genuine sensory acuity while actively resisting the kind of reverence that makes these things tedious.",
             "The event runs over one day and is open to all — no prior competitive experience is required or advantaged. Participants taste, score, and discuss. Past materials have included preparations from unexpected origins, unusual processing methods, and at least one round featuring something that was not coffee at all.",
             "Entry includes all tasting materials, a printed tournament booklet, lunch, and an evening meal. Previous winners receive a commemorative object of the outgoing winner's choosing. The event sells out within hours of opening — join the notification list early."
-          ],
+         ],
           price: "€55.00 / person",
           ctaLabel: "Join the Notification List",
         },
@@ -412,7 +410,6 @@ const crafted: Narrative = {
     {
       id: "community",
       name: "Community",
-      description: "The membership and exchange structures that hold the cooperative together. Join, participate, contribute.",
       offerings: [
         {
           id: "barista-exchange",
