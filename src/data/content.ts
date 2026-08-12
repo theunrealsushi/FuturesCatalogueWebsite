@@ -230,8 +230,9 @@ const techno: Narrative = {
           id: "paradigm-shift-infusions-bar",
           name: "Paradigm Shift Infusions Bar",
           shortDescription: "A smoothie and mocktails bar that offers post-consumer nutrient infusions, including coffee.",
-          description: ["Walk-ins are welcome during off-peak hours (10:00–12:00, 14:30–16:30). Peak-hour slots require a 15-minute advance reservation through the app.",      
-            ],          
+          description: [
+            "Walk-ins are welcome during off-peak hours (10:00–12:00, 14:30–16:30). Peak-hour slots require a 15-minute advance reservation through the app."   
+            ],
           price: "€9.50–€18.00",
           ctaLabel: "Reserve a Slot",
         },
