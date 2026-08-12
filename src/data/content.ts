@@ -307,11 +307,11 @@ const crafted: Narrative = {
         {
           id: "bean-dispensary-2",
           name: "The Bean Dispensary",
-          shortDescription: "A community-owned preparation counter run by rotating member baristas in the heart of Kallio.",
+          shortDescription: "Beans are sold unpackaged in dispensaries run by the Finnish Coffee Roasters Association. The Finnish Coffee Bean Dispensary is a network of 214 certified stores across Finland.",
           description: [
-            "The Bean Dispensary in its Crafted form is a cooperative preparation counter — not a terminal, but a table staffed by a rotating roster of member baristas from the Kahvi 2050 cooperative. Every person behind the counter is a member-owner; tips contribute directly to the cooperative fund.",
-            "The menu changes weekly based on what's available from cooperative-linked growers and roasters. There is no fixed offering — you ask what's good today and you receive an honest answer. Preparation methods are chosen by the barista on shift based on the material at hand.",
-            "The Dispensary operates Tuesday through Sunday, 08:00–16:00. It accepts Kahvi Wallet, cooperative share credits, and cash. Members of the cooperative receive a 15% discount on all purchases. Community events are held in the space on the first Thursday of each month."
+            "Customers bring their own containers or purchase single-use bio-compostable jars at an additional charge.",
+            "Store locations are displayed on the Kahvi 2050 approved vendor map",
+            "Members of the cooperative receive a 15% discount on all purchases. Community events are held in the space on the first Thursday of each month."
           ],
           price: "€4.00–€7.50",
           ctaLabel: "Find Us",
@@ -321,9 +321,9 @@ const crafted: Narrative = {
           name: "KahviTauko Services",
           shortDescription: "A mobile preparation service bringing skilled baristas to workplaces, care homes, and community spaces across the Helsinki region.",
           description: [
-            "KahviTauko — the Finnish word for a coffee break — is a mobile service operated by cooperative members. The service brings a fully equipped preparation setup, a barista, and a carefully chosen selection of cooperative-sourced material to your location.",
-            "Bookings are typically for two-hour slots, during which the barista prepares and serves for your group and is available for conversation about the material, the craft, and the cooperative's work. KahviTauko is particularly popular with care homes, where the ritual and the human connection are as important as the beverage.",
-            "The service covers the Greater Helsinki area. Travel outside this zone is available by arrangement and may carry a supplementary fee. A minimum booking of 10 guests applies. All equipment is transported in a cargo bicycle — zero-emission delivery as standard."
+            "People come to work once a week to enjoy a wholesome coffee and make low threshold social interactions thanks to the expert facilitators.",
+            "Bookings are typically for two-hour slots, during which the barista prepares and serves for the group and is available for conversation about the material, the craft, and the cooperative's work.",
+            "A minimum booking of 4 guests applies. All equipment is transported in a cargo bicycle with zero-emission delivery as standard."
           ],
           price: "€180.00 / 2-hour slot",
           ctaLabel: "Book a Visit",
@@ -333,9 +333,9 @@ const crafted: Narrative = {
           name: "Group Therapy",
           shortDescription: "A facilitated sensory exploration session combining guided tasting, somatic awareness practice, and open conversation.",
           description: [
-            "Group Therapy is a session format developed by cooperative members Marika Koskinen and Juhani Ojala that combines guided sensory tasting with bodywork and facilitated conversation. The name is partly tongue-in-cheek — but the sessions do draw on practices from somatic therapy and community facilitation.",
-            "Sessions run for two and a half hours and are limited to eight participants. The format moves through three preparation styles — typically filter, immersion, and cold — using the same material prepared three ways, with guided attention to the sensory experience at each stage and time for conversation between rounds.",
-            "Group Therapy is not appropriate for those with strong caffeine sensitivity. A non-caffeinated parallel preparation is available on request. Participants are asked to arrive with no strong fragrance. Booking is available for individuals and private groups. A sliding-scale fee structure is available — contact us."
+            "Self-regulation sessions developed by nutritionists, psychologists and social workers to help people build healthier relationships with coffee",
+            "Booking is available for individuals and private groups. A sliding-scale fee structure is available — contact us.",
+            "",
           ],
           price: "€42.00 / person",
           ctaLabel: "Reserve a Place",
@@ -343,11 +343,11 @@ const crafted: Narrative = {
         {
           id: "community-cafe",
           name: "Community Cafe",
-          shortDescription: "A pay-what-you-can cooperative café space open to all, with regular programming and a deeply local character.",
+          shortDescription: "A community-owned café space open to all, with hyperlocal characteristics.",
           description: [
-            "Community Cafe is a semi-permanent space in the Suvilahti district operating on a pay-what-you-can model. There is a suggested contribution of €4 per preparation, but no one is turned away. The space is funded through cooperative surplus, voluntary contributions, and a small grant from the City of Helsinki Cultural Fund.",
-            "The space is open daily from 07:00 to 20:00 and doubles as a venue for cooperative meetings, skill-sharing sessions, language exchanges, repair cafés, and community dinners. The programme is determined monthly by a vote among cooperative members and regular visitors.",
-            "All preparation at the Community Cafe uses cooperative-sourced material. The kitchen is entirely plant-based. Dogs and children are welcome. Wi-Fi is available and shared freely."
+            "Community Cafe is a community-owned space in the Suvilahti district operating on a pay-what-you-can model.",
+            "The space is open daily from 07:00 to 20:00 and doubles as a venue for cooperative meetings, skill-sharing sessions, language exchanges, repair cafés, and community dinners.",
+            "The kitchen is entirely plant-based. Dogs and children are welcome. Wi-Fi is available. There is a suggested contribution of €4 per preparation. The space was bought back by residents after it was abandoned by an Americal coffee chain that became unprofitable in 2041."
           ],
           price: "Pay what you can",
           ctaLabel: "Come In",
@@ -355,11 +355,11 @@ const crafted: Narrative = {
         {
           id: "baristas-choice",
           name: "Barista's Choice",
-          shortDescription: "A subscription service curated entirely by cooperative baristas — no algorithm, no committee, just craft judgment.",
+          shortDescription: "A subscription service curated entirely by cooperative baristas",
           description: [
-            "Barista's Choice is a monthly subscription built around a simple premise: one cooperative barista selects one material, prepares a small roasted sample, writes a personal note about why they chose it, and sends it to subscribers along with suggested preparation parameters.",
-            "The selection changes every month. Subscribers cannot choose — that is the point. The barista may select something they have been working with for months, something that arrived unexpectedly, or something they have strong feelings about. The note that accompanies each selection is typically candid and sometimes funny.",
-            "Subscriptions run for a minimum of three months. Cancellation requires 14 days' notice before the next dispatch. Baristas are paid for their selection work and their writing. Subscribers who wish to respond to a barista's note may do so via the cooperative forum."
+            "Barista's Choice is a monthly drop built around a simple premise: baristas prepare a small roasted sample with a  personal note about the it.",
+            "The note that accompanies each selection is typically candid and reflects the personality of the barista as much as the sample itself.",
+            "Coffee enthusiasts line up for the release of  limited edition coffee blends by their favourite barista, the way people used to wait in line for the new iphone back in the 020's."
           ],
           price: "€28.00 / month",
           ctaLabel: "Subscribe",
@@ -376,9 +376,9 @@ const crafted: Narrative = {
           name: "Coffee Ritual Workshops",
           shortDescription: "Small-group hands-on sessions exploring historical and contemporary preparation rituals from Finnish and global traditions.",
           description: [
-            "Coffee Ritual Workshops are hosted by cooperative members with specialist knowledge of preparation traditions — Ethiopian ceremony, Nordic filter culture, Levantine cardamom preparation, and others. Each workshop focuses on one tradition and runs for approximately three hours.",
-            "Participants prepare and drink alongside the facilitator, handling the equipment, measuring and adjusting, and discussing the cultural context of what they are doing. The workshops are deliberately unhurried. There is usually a meal or a shared snack at some point.",
-            "Workshops are held at the cooperative's space in Kallio and at partner venues across the city. A full schedule is published at the start of each season. Workshops are limited to 12 participants. Materials are included in the ticket price. Dietary requirements are accommodated with advance notice."
+            "Coffee Ritual Workshops are hosted by cooperative members with specialist knowledge of preparation traditions such as Ethiopian ceremony, Nordic filter culture, Turkish preparation, and others. Each workshop focuses on one tradition and runs for approximately three hours.",
+            "",
+            "Workshops are held at the Roasters Association's Bean Dispensaries. A full schedule is published at the start of each season."
           ],
           price: "€38.00 / person",
           ctaLabel: "Browse the Schedule",
@@ -386,11 +386,11 @@ const crafted: Narrative = {
         {
           id: "rite-of-passage",
           name: "Rite of Passage",
-          shortDescription: "An annual multi-day gathering marking the harvest season — part celebration, part skill exchange, part cooperative assembly.",
+          shortDescription: "Children brew their first cup of coffee in the wilderness when they turn 16, in a ceremony with loved ones who bless them and impart words of wisdom.",
           description: [
-            "Rite of Passage is the cooperative's annual gathering, held over three days each October at a site chosen by member vote. The event combines harvest celebration, skill-sharing sessions, a formal cooperative assembly, open preparation spaces, and an evening programme of music, storytelling, and community.",
-            "The gathering is open to members and their guests. A limited number of public tickets are available each year via ballot. The programme is set by a volunteer organising committee drawn from across the cooperative membership.",
-            "Participants camp on site or arrange their own accommodation in the local area. The cooperative provides a communal kitchen and dining tent. Children are welcome and a supervised programme is available for those aged 5–12. Dogs are welcome in designated areas."
+            "",
+            "",
+            ""
           ],
           price: "€85.00 / 3 days",
           ctaLabel: "Apply for a Place",
@@ -398,11 +398,11 @@ const crafted: Narrative = {
         {
           id: "cynical-trials",
           name: "Cynical Trials",
-          shortDescription: "A competitive blind-tasting tournament with a deliberately irreverent format. All skill levels welcome.",
+          shortDescription: "The sampling programme gives people the opportunity to try roasts and blends of liberica to develop its flavour. They get feedback, you get free coffee. The more interesting the feeback, the more coffee you get to try. ",
           description: [
-            "Cynical Trials is a blind-tasting competition with a twist: the judging criteria change with each round, the materials are undisclosed until after judging, and the scoring system is redesigned each year by the previous year's winner. The result is a tournament that rewards genuine sensory acuity while actively resisting the kind of reverence that makes these things tedious.",
-            "The event runs over one day and is open to all — no prior competitive experience is required or advantaged. Participants taste, score, and discuss. Past materials have included preparations from unexpected origins, unusual processing methods, and at least one round featuring something that was not coffee at all.",
-            "Entry includes all tasting materials, a printed tournament booklet, lunch, and an evening meal. Previous winners receive a commemorative object of the outgoing winner's choosing. The event sells out within hours of opening — join the notification list early."
+            "",
+            "",
+            ""
           ],
           price: "€55.00 / person",
           ctaLabel: "Join the Notification List",
@@ -417,11 +417,11 @@ const crafted: Narrative = {
         {
           id: "barista-exchange",
           name: "Barista Exchange",
-          shortDescription: "A structured exchange programme placing cooperative baristas at partner establishments across Europe for 2–6 week residencies.",
+          shortDescription: "An cultural exchange programme for baristas and farmers alike, funded by the EU. Looks great on any resumé.",
           description: [
-            "Barista Exchange is a residency programme connecting Kahvi 2050 cooperative members with partner preparation spaces across Europe. Participating baristas travel to a partner for a period of 2–6 weeks, work alongside the local team, contribute their skills and perspective, and return with new knowledge and relationships.",
-            "The Exchange is reciprocal: hosting partners send a barista to Helsinki for a corresponding period. Host cooperatives cover accommodation; travel costs are shared between the cooperative and the participant. Language is not a barrier — the programme has operated successfully in 11 countries with participants who share no common language.",
-            "Applications are open twice yearly. Priority is given to members who have not previously participated. The Exchange has been running since 2043 and has generated lasting friendships, cross-border collaborative projects, and at least two marriages."
+            "",
+            "",
+            ""
           ],
           price: "Cooperative member benefit",
           ctaLabel: "Apply for the Exchange",
