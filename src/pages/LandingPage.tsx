@@ -198,7 +198,7 @@ export default function LandingPage() {
             A catalogue of fictional prototypes for a <span style={{ whiteSpace: "nowrap" }}>post-extractive</span> coffee culture in Finland
           </h1>
           {/* Body — typewriter on first visit, sequential per paragraph */}
-          <div className="space-y-4 text-[#e8e6e1]/50 leading-relaxed" style={{ fontFamily: "'Roboto Mono', monospace", textAlign: "justify", fontSize: "12px" }}>
+          <div className="space-y-4 text-[#e8e6e1]/50 leading-relaxed" style={{ fontFamily: "'Roboto Mono', monospace", textAlign: "justify", fontSize: "16px" }}>
             {PARAS.map((full, i) => (
               <p key={i} style={{ minHeight: i >= activePara && texts[i] === "" ? "0" : undefined }}>
                 {texts[i]}
