@@ -49,6 +49,7 @@ function BlinkCursor({ color = "#38BDF8" }: { color?: string }) {
 
 // ── Animated price pill ──────────────────────────────────────────────────────
 const MONO = "'SF Mono', 'Cascadia Code', Consolas, ui-monospace, monospace";
+const HEADING = "'Sora', -apple-system, BlinkMacSystemFont, sans-serif";
 const CYAN = "rgba(56,189,248,0.25)";
 const CYAN_T = "#38BDF8";
 
@@ -134,7 +135,7 @@ export default function NarrativeHome() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-16 sm:py-24 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <div
-              className="text-[10px] font-semibold tracking-[0.3em] uppercase mb-6"
+              className="text-[14px] font-semibold tracking-[0.3em] uppercase mb-6"
               style={{ color: narrative.accent, fontFamily: isTechno ? MONO : undefined }}
             >
               {narrative.heroSubtext}
@@ -145,7 +146,7 @@ export default function NarrativeHome() {
             >
               {narrative.name}
             </h1>
-            <p className="text-sm text-[#e8e6e1]/50 leading-relaxed max-w-md" style={{ fontFamily: "'Roboto Mono', monospace", textAlign: "justify" }}>
+            <p className="text-sm text-[#e8e6e1]/80 leading-relaxed max-w-md" style={{ fontFamily: "'Roboto Mono', monospace", textAlign: "justify" }}>
               {narrative.description}
             </p>
           </div>
@@ -172,7 +173,7 @@ export default function NarrativeHome() {
               <button
                 key={cat.id}
                 onClick={() => setActiveTab(i)}
-                className="px-6 py-4 text-xs font-semibold uppercase tracking-widest transition-colors relative"
+                className="px-6 py-4 text-[14px] font-semibold uppercase tracking-widest transition-colors relative"
                 style={{
                   fontFamily: MONO,
                   color: isActive ? (isTechno ? CYAN_T : narrative.accent) : "rgba(232,230,225,0.35)",
@@ -193,11 +194,8 @@ export default function NarrativeHome() {
           })}
         </div>
 
-        {/* Active tab content */}
+ {/* Active tab content */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12">
-          <p className="text-xs text-[#e8e6e1]/35 mb-10 max-w-2xl" style={{ fontFamily: isTechno ? MONO : undefined }}>
-            {activeCat.description}
-          </p>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {activeCat.offerings.map((offering) => (
               <Link
@@ -212,7 +210,7 @@ export default function NarrativeHome() {
                   <ImagePlaceholder aspect="wide" label="Offering image" />
                   {offering.tag && (
                     <span
-                      className="absolute top-2.5 left-2.5 text-[10px] font-semibold tracking-widest uppercase px-2 py-0.5 rounded-sm"
+                      className="absolute top-2.5 left-2.5 text-[14px] font-semibold tracking-widest uppercase px-2 py-0.5 rounded-sm"
                       style={{
                         backgroundColor: isTechno ? "rgba(56,189,248,0.15)" : narrative.accent,
                         color: isTechno ? CYAN_T : "#1e2530",
@@ -224,10 +222,16 @@ export default function NarrativeHome() {
                     </span>
                   )}
                 </div>
-                <h3 className="text-sm font-semibold text-[#e8e6e1] mb-1 group-hover:opacity-80 transition-opacity">
+                <h3
+                  className="text-sm font-semibold text-[#e8e6e1] mb-1 group-hover:opacity-80 transition-opacity"
+                  style={{ fontFamily: HEADING }}
+                >
                   {offering.name}
                 </h3>
-                <p className="text-xs text-[#e8e6e1]/40 mb-2 leading-relaxed line-clamp-2">
+                <p
+                  className="text-[14px] text-[#e8e6e1]/60 mb-2 leading-relaxed"
+                  style={{ fontFamily: "'Roboto Mono', monospace" }}
+                >
                   {offering.shortDescription}
                 </p>
               </Link>
