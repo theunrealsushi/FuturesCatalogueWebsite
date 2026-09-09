@@ -436,6 +436,14 @@ export default function OfferingPage() {
   const narrative = narrativeMap[narrativeId];
   const category = getNarrativeCategory(narrativeId, categoryId);
   const offering = getOffering(narrativeId, categoryId, offeringId);
+
+  const [visible, setVisible] = useState(false);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    setVisible(false);
+    const t = requestAnimationFrame(() => setVisible(true));
+    return () => cancelAnimationFrame(t);
+  }, [offeringId]);
   const [verifyOpen, setVerifyOpen] = useState(false);
   const [technoDelivery, setTechnoDelivery] = useState<"drone" | "hyperloop">("drone");
   const [cartCount, setCartCount] = useState(0);
@@ -456,7 +464,16 @@ export default function OfferingPage() {
   }
 
   return (
-    <div className="min-h-screen" style={{ backgroundColor: bg, color: "#e8e6e1" }}>
+    <div
+      className="min-h-screen"
+      style={{
+        backgroundColor: bg,
+        color: "#e8e6e1",
+        opacity: visible ? 1 : 0,
+        transform: visible ? "translateY(0)" : "translateY(10px)",
+        transition: "opacity 0.35s ease, transform 0.35s ease",
+      }}
+    >
       {verifyOpen && <CitizenVerificationModal onClose={() => setVerifyOpen(false)} />}
 
       {/* Sticky header band — Nav + HUD for techno, just Nav otherwise */}
@@ -471,7 +488,6 @@ export default function OfferingPage() {
           crumbs={[
             { label: "Kahvi 2050", href: "/" },
             { label: narrative.name, href: `/${narrativeId}` },
-            { label: category.name, href: `/${narrativeId}/${categoryId}` },
             { label: offering.name },
           ]}
         />

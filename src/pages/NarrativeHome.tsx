@@ -250,7 +250,7 @@ export default function NarrativeHome() {
             className="text-lg sm:text-2xl font-medium"
             style={{ color: isTechno ? CYAN_T : narrative.secondary, fontFamily: isTechno ? MONO : undefined }}
           >
-            {isTechno ? `// "${narrative.tagline}" //` : narrative.tagline}
+            {narrative.tagline}
           </p>
           <Link
             to="/"
