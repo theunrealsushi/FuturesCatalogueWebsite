@@ -336,7 +336,7 @@ function TechnoDPPAccordion() {
         className="px-4 py-2.5 text-[10px] tracking-widest uppercase"
         style={{ borderBottom: `1px solid ${CYAN}`, color: "rgba(56,189,248,0.6)", fontFamily: MONO, backgroundColor: "rgba(56,189,248,0.04)", letterSpacing: "0.12em" }}
       >
-        SITRA DPP // LAB TWIN MODULE
+        DIGITAL PRODUCT PASSPORT POWERED BY BLOBCHAIN
       </div>
 
       {staticTabs.map((tab, i) => (
@@ -602,7 +602,7 @@ export default function OfferingPage() {
                   <path d="M8 1l1.8 3.6L14 5.2l-3 2.9.7 4.1L8 10.3l-3.7 1.9.7-4.1-3-2.9 4.2-.6L8 1z" stroke="currentColor" strokeWidth="1.2" />
                 </svg>
                 <span style={{ fontFamily: isRegulated || isTechno ? MONO : undefined }}>
-                  {isRegulated ? "ESPR CERTIFIED BY CIRCULAR DATA LAB FINLAND" : isTechno ? "SITRA DPP VERIFIED · GENOMIC BATCH CERTIFIED" : "Verified by Kahvi 2050 quality assurance"}
+                  {isRegulated ? "ESPR CERTIFIED BY FINNISH ENVIRONMENTAL DATA LAB" : isTechno ? "BLOBCHAIN DPP AVAILABLE · GENOMIC BATCH CERTIFIED" : "Verified by Kahvi 2050 quality assurance"}
                 </span>
               </div>
               <div className="flex items-center gap-3 text-xs text-[#e8e6e1]/40">
