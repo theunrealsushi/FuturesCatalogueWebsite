@@ -185,10 +185,10 @@ export default function LandingPage() {
         <header className="mb-16 sm:mb-24">
           {/* Metadata label — mono */}
           <div
-            className="text-xs tracking-[0.3em] uppercase text-[#e8e6e1]/30 mb-5"
-            style={{ fontFamily: MONO }}
+            className="text-[14px] tracking-[0.3em] uppercase mb-5"
+            style={{ fontFamily: MONO, color: "rgba(250, 250, 250, 0.8)" }}
           >
-            Helsinki, Finland — 2050
+            Kahvi 2050
           </div>
           {/* Primary heading — Sora, static */}
           <h1
@@ -198,7 +198,7 @@ export default function LandingPage() {
             A catalogue of fictional prototypes for a <span style={{ whiteSpace: "nowrap" }}>post-extractive</span> coffee culture in Finland
           </h1>
           {/* Body — typewriter on first visit, sequential per paragraph */}
-          <div className="space-y-4 text-[#e8e6e1]/50 leading-relaxed" style={{ fontFamily: "'Roboto Mono', monospace", textAlign: "justify", fontSize: "16px" }}>
+          <div className="space-y-4 text-[#ffffff]/70 leading-relaxed" style={{ fontFamily: "'Roboto Mono', monospace", textAlign: "justify", fontSize: "16px" }}>
             {PARAS.map((full, i) => (
               <p key={i} style={{ minHeight: i >= activePara && texts[i] === "" ? "0" : undefined }}>
                 {texts[i]}
@@ -213,15 +213,17 @@ export default function LandingPage() {
           </div>
         </header>
 
-        <div
-          className="grid grid-cols-1 md:grid-cols-3 gap-px bg-[#3a4450]"
+
+        
+             <div
+          className="grid grid-cols-1 md:grid-cols-3 gap-[8px] bg-[#1e2530]] -mt-12 sm:-mt-16"
           style={{ opacity: done ? 1 : 0, transition: "opacity 0.8s ease", pointerEvents: done ? "auto" : "none" }}
-        >
+          >
           {narratives.map((narrative) => (
             <Link
               key={narrative.id}
               to={`/${narrative.id}`}
-              className="group relative flex flex-col justify-between p-8 sm:p-10 min-h-[420px] sm:min-h-[520px] transition-all duration-300"
+              className="group relative flex flex-col justify-between p-8 sm:p-10 min-h-[300px] sm:min-h-[380px] transition-all duration-300"
               style={{ backgroundColor: "#1e2530" }}
             >
               <div
@@ -233,7 +235,7 @@ export default function LandingPage() {
                 {/* Narrative label — mono, +18% tracking */}
                 <div
                   className="font-semibold uppercase mb-4"
-                  style={{ color: narrative.accent, fontFamily: MONO, fontSize: "11px", letterSpacing: "0.18em" }}
+                  style={{ color: narrative.accent, fontFamily: MONO, fontSize: "14px", letterSpacing: "0.18em" }}
                 >
                   Narrative {narratives.indexOf(narrative) + 1}
                 </div>
@@ -246,7 +248,7 @@ export default function LandingPage() {
                 </h2>
                 {/* Description — system sans (Roboto Mono for regulated) */}
                 <p
-                  className="text-xs text-[#e8e6e1]/40 leading-relaxed"
+                  className="text-[14px] text-[#fafafa]/70 leading-relaxed"
                   style={{ fontFamily: "'Roboto Mono', monospace" }}
                 >
                   {narrativeDescriptions[narrative.id as keyof typeof narrativeDescriptions]}
@@ -267,7 +269,7 @@ export default function LandingPage() {
                 {/* CTA — mono HUD format */}
                 <div
                   className="mt-6 font-medium uppercase transition-colors"
-                  style={{ color: narrative.accent, fontFamily: MONO, fontSize: "12px", letterSpacing: "0.15em" }}
+                  style={{ color: narrative.accent, fontFamily: MONO, fontSize: "14px", letterSpacing: "0.15em" }}
                 >
                   ENTER [ → ]
                 </div>
@@ -276,11 +278,12 @@ export default function LandingPage() {
           ))}
         </div>
 
-        <footer className="mt-20 pt-8 border-t border-[#3a4450] flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-xs text-[#e8e6e1]/20" style={{ fontFamily: MONO }}>
+        <footer className="mt-10 pt-2 border-t border-[#3a4450]/0 flex flex-col sm:flex-row items-center justify-between gap-4">
+          
+          <p className="text-xs text-[#fafafa]/60" style={{ fontFamily: MONO }}>
             © 2050 Kahvi 2050 Collective · Helsinki · FI-2050-COL-004
           </p>
-          <p className="text-xs text-[#e8e6e1]/20" style={{ fontFamily: MONO }}>
+          <p className="text-xs text-[#fafafa]/60" style={{ fontFamily: MONO }}>
             A design fiction futures catalogue
           </p>
         </footer>
