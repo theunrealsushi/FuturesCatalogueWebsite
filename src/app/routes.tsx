@@ -22,5 +22,5 @@ export const router = createBrowserRouter([
     Component: OfferingPage,
   },
 ],
-{basename: "/FuturesCatalogueWebsite" }
+{basename: "/Kahvi2050" }
 );
