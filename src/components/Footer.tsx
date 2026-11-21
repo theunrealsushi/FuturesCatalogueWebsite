@@ -13,45 +13,40 @@ export default function Footer({ accent = "#5f7a6e" }: FooterProps) {
             <div className="text-sm font-semibold tracking-[0.15em] uppercase mb-3" style={{ color: accent }}>
               Kahvi 2050
             </div>
-            <p className="text-xs text-[#e8e6e1]/40 leading-relaxed">
-              A futures catalogue exploring what coffee culture might become. Helsinki, Finland.
+            <p className="text-xs text-[#e8e6e1]/40 leading-relaxed"> A futures catalogue exploring what coffee culture might become in 2050 Finland.
             </p>
           </div>
           <div>
             <div className="text-xs font-semibold tracking-widest uppercase text-[#e8e6e1]/30 mb-3">Platform</div>
             <ul className="space-y-2 text-xs text-[#e8e6e1]/50">
-              <li><span className="cursor-default">About Kahvi 2050</span></li>
-              <li><span className="cursor-default">How It Works</span></li>
-              <li><span className="cursor-default">Membership</span></li>
-              <li><span className="cursor-default">Cooperative</span></li>
+              <li><span className="cursor-default">Kahvi 2050 Homepage</span></li>
+              
             </ul>
           </div>
           <div>
             <div className="text-xs font-semibold tracking-widest uppercase text-[#e8e6e1]/30 mb-3">Legal</div>
             <ul className="space-y-2 text-xs text-[#e8e6e1]/50">
-              <li><span className="cursor-default">Terms of Service</span></li>
               <li><span className="cursor-default">Privacy Policy</span></li>
               <li><span className="cursor-default">Data Rights</span></li>
-              <li><span className="cursor-default">Accessibility</span></li>
             </ul>
           </div>
           <div>
-            <div className="text-xs font-semibold tracking-widest uppercase text-[#e8e6e1]/30 mb-3">Support</div>
+            <div className="text-xs font-semibold tracking-widest uppercase text-[#e8e6e1]/30 mb-3">Design</div>
             <ul className="space-y-2 text-xs text-[#e8e6e1]/50">
-              <li><span className="cursor-default">Help Centre</span></li>
-              <li><span className="cursor-default">Contact Us</span></li>
-              <li><span className="cursor-default">Vendor Portal</span></li>
-              <li><span className="cursor-default">Press Enquiries</span></li>
+              <li><span className="cursor-default">About the Kahvi 2050 Project</span></li>
+              <li><span className="cursor-default">About Sushmita Charlu</span></li>
+              <li><span className="cursor-default">Contact</span></li>
+            
             </ul>
           </div>
         </div>
 
         <div className="border-t border-[#3a4450] pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-xs text-[#e8e6e1]/25">
-            © 2050 Kahvi 2050 Collective. All offerings subject to availability and applicable regulation.
+            © 2050 Kahvi 2050 Cooperative. All offerings subject to availability and applicable regulation.
           </p>
           <p className="text-xs text-[#e8e6e1]/25">
-            Prices include VAT at the applicable rate · Registered in Finland · FI-2050-COL-004
+            Prices include VAT at the applicable rate
           </p>
         </div>
       </div>

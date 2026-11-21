@@ -28,12 +28,12 @@ export interface Narrative {
   secondary: string;
   feel: string;
   categories: Category[];
-}
+} 
 
 const regulated: Narrative = {
   id: "regulated",
   name: "Regulated Future",
-  tagline: "Certified. Compliant. Complete.",
+  tagline: "",
   description: "A structured marketplace governed by the Finnish Consumer Authority for Nutritive Beverages. Every product, service and event is approved, tracked and accountable. This marketplace imagines a future where coffee has shifted from a habit that Finland's residents take for granted, into a scarce and regulated commodity. Coffee is  treated as something that carries environmental, cultural and economic value, in a world now dealing with the consequences of unchecked and linear economic growth. The narrative highlights inequality, with the wealthy people able to continue enjoying café culture, while others have limited access to coffee. The underground coffee networks reveal resistance to government control and a desire to preserve the rich, third wave coffee culture that looked so promising a few decades ago. Overall, the fiction suggests that in the future, climate pressures may transform everyday pleasures into controlled luxuries, forcing society to rethink consumption.",
   heroSubtext: "Procurement Portal v14.2 ",
   accent: "#c04a2a",
@@ -43,7 +43,7 @@ const regulated: Narrative = {
     {
       id: "products",
       name: "Products",
-      description: "Approved nutritive beverage products meeting all 2049 EU Circular Standards. Each item carries a verified traceability certificate.",
+     
       offerings: [
         {
           id: "delicious-alternatives",
@@ -51,8 +51,8 @@ const regulated: Narrative = {
           shortDescription: "A coffee alternative so delicious you forget what the original thing tasted like.",
           description: [
             "The blend replicates the mouthfeel, aroma signature, and stimulant profile of pre-collapse arabica at a fraction of the ecological cost.",
-            "Available in three approved roast variants: Nordic Light (ref. NL-04), Balanced (ref. BA-11), and Dark Functional (ref. DF-22).",
-            ""
+            "Available in three approved roast variants: Light, Balanced and Dark",
+        
           ],
           price: "€18.50",
           ctaLabel: "Add to Procurement Cart",
@@ -66,12 +66,11 @@ const regulated: Narrative = {
         },
         {
           id: "blends",
-          name: "Blends",
-          shortDescription: "Curated multi-origin certified blends assembled quarterly by the National Beverage Standards Institute.",
+          name: "Heritage Blends",
+          shortDescription: "Take page from the past and give chicory and barley blends a try, curated for that vintage feel.",
           description: [
-            "Each quarterly Blend release is assembled by the National Beverage Standards Institute from a pool of pre-approved single-origin stocks. The 2050 Q2 release — Blend 07-B — combines fermented oat extract, adaptogenic chicory root, and a 12% certified robusta derivative sourced from the Vertical Estates of Tampere.",
-            "Blends carry a limited-batch identification code printed on each unit. Provenance data — including extraction date, processor ID, and transport chain — is accessible by scanning the QR matrix on the packaging with any registered device.",
-            "Available in 200g and 500g formats. Subscription allocation is prioritised for Tier 2 and above account holders. Public stock releases occur on the first Tuesday of each month."
+            "Formulated by a group of experts from the International Coffee Organization, and homegrown in Finland. Delicious flavour profile with reduced caffeine dependency. Shelf-stable for up to 18 months.",
+           
           ],
           price: "€24.00",
           ctaLabel: "Check Availability",
@@ -81,16 +80,16 @@ const regulated: Narrative = {
     {
       id: "services",
       name: "Services",
-      description: "Licensed beverage preparation and data services operating under the 2048 Finnish Service Provision Act. All providers are bonded and regularly inspected.",
+      
       offerings: [
         {
           id: "bean-dispensary",
           name: "The Bean Dispensary",
-          shortDescription: "Automated licensed dispensary terminals providing precision-dosed nutritive beverages at certified preparation points across Helsinki.",
+          shortDescription: "Beans are sold unpackaged in dispensaries run by the Finnish Coffee Roasters Association.",
           description: [
-            "The Bean Dispensary is a network of 214 certified preparation terminals operating under Dispensary Licence D-2049-FI-007. Each terminal is calibrated weekly by a registered technician and maintains a real-time quality log accessible to the Finnish Consumer Authority.",
-            "Users authenticate via their Kahvi 2050 ID before dispensing. Dosage is personalised based on registered health data and daily intake quota as defined by the National Nutritive Beverage Framework 2048. Single-use biocompostable cups are provided at no additional charge.",
-            "Terminal locations are displayed on the Kahvi 2050 approved vendor map. New locations are subject to a 90-day licensing review before activation. Priority access is available for registered commercial account holders."
+            "The Finnish Coffee Bean Dispensary is a network of 214 certified stores across Finland.",
+            "Users authenticate before dispensing. Customers bring their own containers or purchase single-use bio-compostable jars at an additional charge.",
+            "Store locations are displayed on the Kahvi 2050 approved vendor map."
           ],
           price: "€3.20 / serving",
 
@@ -101,9 +100,8 @@ const regulated: Narrative = {
           name: "Kahvi Museo",
           shortDescription: "A state-registered heritage experience documenting the pre-Collapse history of coffee cultivation and trade in Finland.",
           description: [
-            "Kahvi Museo is a certified cultural heritage service operating under the Museum Act (2045 revision). The experience spans three licensed exhibition halls in the former Paulig facility in Vuosaari, now administered by the Helsinki Cultural Heritage Authority.",
-            "The permanent collection documents the full lifecycle of pre-Collapse coffee culture — from colonial trade routes through the Scandinavian third-wave movement to the regulatory transition period of 2031–2038. All interpretive materials have been reviewed by the National Content Standards Board.",
-            "Group bookings of eight or more must submit a Cultural Access Request form at least 14 days in advance. Educational institutions qualify for the subsidised access rate of €4.50 per student. Individual passes are available on a first-come allocation basis each morning from 09:00."
+            "Tampere-based Kahvi Museo documents the full lifecycle of coffee culture, from colonial trade routes through the Scandinavian third-wave movement to the present-day regulatory transition period and post-extractivism.",
+            "Interactive activities include discovering the origin of beans and learning about coffee addiction through an in-house escape room. Kahvi Museo is a certified cultural heritage service."
           ],
           price: "€12.00 / person",
           ctaLabel: "Book a Visit",
@@ -111,23 +109,22 @@ const regulated: Narrative = {
         {
           id: "very-berry",
           name: "Very Berry",
-          shortDescription: "Licensed Nordic berry infusion service using only foraged and cultivated berries from approved Finnish estates.",
+          shortDescription: "Very-berry is Finland’s signature circular economy café with 6 locations in the capital region.",
           description: [
-            "Very Berry operates under the Forage and Cultivar Licensing Scheme (FCLS-2047). All berry stocks are sourced exclusively from estates holding current FCLS certification, with provenance verified at each harvest point via the national agricultural telemetry system.",
-            "The service offers both prepared infusion (hot and cold), and a subscription delivery option for home preparation kits. Each kit contains dried berry blends, a reusable stainless preparation vessel, and a printed care and compliance card detailing acceptable preparation parameters.",
-            "Very Berry infusions are classified as a supplementary nutritive beverage under the Finnish Nutritive Beverage Framework and do not count toward the daily coffee-equivalent allocation. Available at licensed preparation points city-wide."
+            "Drinks and snacks utilise all parts from the coffee process, from cascara syrups to coffee leaf chips.",
+            "Get immersed in the tropical décor and feel like you have been transported to real coffee farm.",
           ],
           price: "€5.80 / serving",
           ctaLabel: "Subscribe to Deliveries",
         },
         {
-          id: "circular-data-lab",
-          name: "Circular Data Lab",
-          shortDescription: "Regulatory-grade data services for beverage supply chain traceability and circular economy compliance reporting.",
+          id: "finnish-environmental-data-lab",
+          name: "Finnish Environmental Data Lab",
+          shortDescription: "Finnish Environmental Data Lab (FEDL) designs circular benchmarks for industries and discovers best practices through analysis of big data.",
           description: [
-            "Circular Data Lab provides the computational infrastructure that underpins Kahvi 2050's traceability commitments. Enterprise clients use the Lab's API suite to generate, store, and submit supply chain records required under EU Circular Economy Regulation 2047/88.",
-            "Services include: batch provenance ledger, carbon offset calculation and certification, waste stream reporting, and automated compliance submission to the Finnish Environment Institute. All data is stored on servers located within the EU under Tier 3 jurisdictional agreements.",
-            "Pricing is tiered by API call volume and organisation size. Public sector clients are eligible for subsidised rate agreements. Data sovereignty guarantees are provided in writing as part of all contracts over €5,000 annually."
+            "While the effects of climate change, raw material availability and pollution are continuously monitored FEDL aims to transition to closed-loop systems through evidence-based research. ",
+            "Services include batch origin ledger, carbon offset calculation and certification, waste stream reporting, and automated compliance submissions.",
+            "Ledgers are powered by Blobchain 4.0. Visit FEDL’s Website to see all available services. "
           ],
           price: "From €280.00 / month",
           ctaLabel: "Request a Demo",
@@ -150,16 +147,13 @@ const regulated: Narrative = {
     {
       id: "events",
       name: "Events",
-      description: "Approved public and professional events listed under the National Events Register for Nutritive Beverage Culture.",
       offerings: [
         {
-          id: "ive-been-underground",
-          name: "I've Been Underground",
-          shortDescription: "A licensed immersive experience exploring the informal coffee trade networks that operated during the Transition Period of 2031–2038.",
+          id: "ive-bean-underground",
+          name: "Bean Underground",
+          shortDescription: "When coffee becomes regulated and hard to source, a young, underground movement erupts, hosting parties with smuggled beans and exploring rituals from different parts of the world.",
           description: [
-            "I've Been Underground is a state-approved immersive experience produced in partnership with the Finnish Memory Archive and the Helsinki Cultural Heritage Authority. It documents the informal distribution networks and social rituals that sustained coffee culture during the years when commercial supply collapsed and regulatory frameworks had not yet formed.",
-            "The experience takes place across three levels of the former Cable Factory basement and lasts approximately 90 minutes. It has received a Cultural Content Classification of C-III (mature themes, archival material, simulated environments). Participants must be 16 or over.",
-            "Tickets are allocated through a monthly public ballot. Unsuccessful applicants receive priority entry in the following month's ballot. Group cultural access subsidies are available for registered community organisations and schools."
+            "*need to figure out where to put this because technically this is illegal :)"
           ],
           price: "€28.00 / person",
           ctaLabel: "Enter the Ballot",
@@ -172,26 +166,23 @@ const regulated: Narrative = {
 const techno: Narrative = {
   id: "techno",
   name: "Technosolutionist Future",
-  tagline: "Optimise. Automate. Elevate.",
-  description: "The smart marketplace for next-generation beverage innovation. Discover AI-formulated products, precision automation services, and the community powering the fourth-wave coffee revolution.",
+  tagline: "",
+  description: "The smart marketplace for next-generation beverage innovation. Discover AI-formulated products, precision automation services, and the community powering the fourth-wave coffee revolution.This narrative imagines a future where coffee continues to be central to life, but becomes more intentionally consumed, or rather, “dosed”. Scientific developments move at a rapid pace, inspired by a new era of space exploration, making sophisticated technology accessible to anyone on earth who can afford it. AI is peripheral to these developments, being utilized only for narrow, functional tasks. The presented values of energy conservation, circularity and optimisation, all have fingerprints of a world that is trying to leverage technology to live a comfortable life within planetary boundaries. Technology also acts as a connector in old or new ways, as humans still value social relationships with other humans. In addition to this, technology is also widely used to connect with animals and plants. This technologically managed future comes with trade-offs – unprecedented personal data collection and inevitable adoption by humans who cannot afford to be left behind.",
   heroSubtext: "Powered by Kahvi Intelligence Engine™ — Real-time personalisation active",
-  accent: "#d4b84a",
+  accent: "#66B8AC",
   secondary: "#5f7a6e",
   feel: "sleek",
   categories: [
     {
       id: "products",
       name: "Products",
-      description: "Hardware and formulations engineered for peak performance. Every product is data-backed, iteratively improved, and optimised for the human-technology interface.",
       offerings: [
         {
           id: "post-consumer-nutrients-2",
           name: "Post Consumer Nutrients 2",
-          shortDescription: "Second-generation closed-loop nutrient recovery system. Full home integration with the Kahvi Intelligence dashboard.",
+          shortDescription: "Coffee grounds are collected and analysed for their properties, such as oils, nutrients and pigments that can be useful for other industries.",
           description: [
-            "Post Consumer Nutrients 2 is the residential counterpart to enterprise-grade circular processing. The PCN2 home unit — a 28cm countertop device — processes up to 800g of spent grounds per week into a nutrient slurry deployable directly through compatible smart garden or balcony planter systems via the Kahvi Home API.",
-            "The unit learns from your preparation patterns to predict recovery cycles, notifying you when the processing chamber is ready. Integration with the Kahvi Intelligence Engine provides a live carbon impact dashboard, showing your cumulative offset in real time.",
-            "PCN2 requires a one-time installation calibration performed remotely by a certified Kahvi technician. Units are covered by a 5-year smart warranty — hardware faults are diagnosed automatically and parts dispatched before you notice the problem."
+            ""
           ],
           price: "€349.00",
           ctaLabel: "Order Now",
@@ -199,11 +190,9 @@ const techno: Narrative = {
         {
           id: "zero-gravity-coffee",
           name: "Zero Gravity Coffee",
-          shortDescription: "Micro-pressurised beverage pods engineered for preparation in low-gravity and high-altitude environments.",
+          shortDescription: "A self-brewing coffee mug with vaccuum technology. Invented for space. Now available for everyone.",
           description: [
-            "Zero Gravity Coffee was developed in collaboration with the European Space Habitat Authority for use aboard orbital stations and high-altitude research facilities. The sealed extraction pod uses a two-chamber micro-pressurisation system that requires no heating element — exothermic reaction is triggered by chamber activation.",
-            "The 2050 civilian release retains the original engineering for earth-based use cases: no power source required, preparation in under 90 seconds, and a shelf life of 8 years from manufacture date. Ideal for expeditions, remote work environments, and serious preparedness planning.",
-            "Available in four profiles: Concentrate, Filtered, Cold Extraction, and Stimulant-Free. Pods are fully compostable within 12 weeks in standard municipal composting conditions. Minimum order: 12 pods."
+            ""
           ],
           price: "€38.00 / 12 pods",
           ctaLabel: "Add to Cart",
@@ -211,11 +200,9 @@ const techno: Narrative = {
         {
           id: "dr-device",
           name: "Dr. Device",
-          shortDescription: "Biometric-integrated smart brewer that adjusts extraction parameters based on your real-time physiological data.",
+          shortDescription: "Your smart watch or health ring has a code that can be scanned to read your health profiles.",
           description: [
-            "Dr. Device is the most advanced home brewing system on the market. It pairs with your registered health wearable to read cortisol levels, sleep debt, and hydration status before each preparation cycle, then adjusts brew temperature, extraction time, caffeine concentration, and flavour profile accordingly.",
-            "The companion app maintains a longitudinal record of your consumption patterns and physiological responses, generating weekly insight reports and monthly recommendations. Over time, Dr. Device learns your optimal preparation windows and will proactively suggest when not to brew.",
-            "Dr. Device is compatible with all Kahvi 2050 certified pods and grounds. It requires a stable network connection and a registered Kahvi Intelligence account. Health data is processed on-device and never leaves your local network without explicit consent."
+            ""
           ],
           price: "€620.00",
           ctaLabel: "Configure Your Device",
@@ -242,23 +229,19 @@ const techno: Narrative = {
         {
           id: "paradigm-shift-infusions-bar",
           name: "Paradigm Shift Infusions Bar",
-          shortDescription: "A precision infusion experience designed by AI and delivered by calibrated automation at the Punavuori Innovation District.",
+          shortDescription: "A smoothie and mocktails bar that offers post-consumer nutrient infusions, including coffee.",
           description: [
-            "Paradigm Shift is Helsinki's first fully AI-designed infusion bar. The menu — updated every 14 days by the Kahvi Intelligence Engine — responds to aggregate seasonal health data, atmospheric conditions, and collective preference signals drawn from the Kahvi Intelligence community network.",
-            "Each infusion is prepared by a Paradigm Shift automated brewing arm to a tolerance of ±0.3°C and ±0.4g. Human staff are present for experience support, allergen queries, and edge-case troubleshooting. No item on the menu has ever been prepared the same way twice.",
-            "Walk-ins are welcome during off-peak hours (10:00–12:00, 14:30–16:30). Peak-hour slots require a 15-minute advance reservation through the app. The bar operates a no-cash policy; payment via Kahvi Wallet or registered SEPA account only."
-          ],
+            "Walk-ins are welcome during off-peak hours (10:00–12:00, 14:30–16:30). Peak-hour slots require a 15-minute advance reservation through the app."   
+            ],
           price: "€9.50–€18.00",
           ctaLabel: "Reserve a Slot",
         },
         {
           id: "hologram-farmer",
           name: "Hologram Farmer",
-          shortDescription: "A live holographic consultation service connecting you with agronomists overseeing vertical coffee cultivation in real time.",
+          shortDescription: "A hologram coffee farmer from sits across the table from you at a café and tells you about their life, their kids, their aspirations and struggles.",
           description: [
-            "Hologram Farmer provides direct access to the agronomists managing Kahvi 2050's partner vertical estates. Sessions are conducted via high-fidelity holographic projection — the agronomist appears life-size in your home or workspace, with their farm environment rendered in the background.",
-            "Sessions are available in Finnish, Swedish, and English. Topics covered include: varietal selection, home cultivation guidance, estate sourcing stories, and customised growing plans for balcony and indoor setups. Each session produces a written summary and a personalised cultivation plan.",
-            "Sessions last 45 minutes. A recording is available for 30 days after the session via your account. Group sessions of up to 6 participants are available at a discounted rate. Equipment requirement: a Holo-Ready display device or compatible headset."
+          ""
           ],
           price: "€55.00 / session",
           ctaLabel: "Book a Session",
@@ -266,11 +249,9 @@ const techno: Narrative = {
         {
           id: "robot-barista",
           name: "Robot Barista",
-          shortDescription: "On-demand robotic barista deployment for events, offices, and installations. Precision at scale.",
+          shortDescription: "An AI enabled system at cafés takes orders, makes recommendations, brews espresso shots and orders new coffee when its out. It can tailor the caffeine, acidity and fat content to suit your health profile.",
           description: [
-            "Robot Barista offers single-day and multi-day deployments of Kahvi 2050's autonomous preparation units. Each unit is a self-contained, mobile platform capable of producing up to 180 servings per hour across a menu of 24 preparation styles.",
-            "The unit arrives pre-calibrated for your event profile — guest volume, preparation preference distribution, and serving window — derived from data you provide during booking. On-site technical support is provided for deployments over 300 guests.",
-            "Robot Barista units require a standard 240V supply and a 1.5m × 1.5m footprint. They operate in temperatures between 5°C and 35°C. Custom branding wraps are available for an additional fee. All spent grounds are collected and processed post-event via Post Consumer Nutrients."
+            ""
           ],
           price: "From €480.00 / day",
           ctaLabel: "Get a Quote",
@@ -280,14 +261,13 @@ const techno: Narrative = {
     {
       id: "community",
       name: "Community",
-      description: "The network where the fourth-wave community builds, shares, and solves. Membership unlocks early access, co-creation tools, and collective intelligence.",
+      description: "A fourth-wave coffee community builds, shares, and solves. Membership unlocks early access, co-creation tools, and collective intelligence.",
       offerings: [
         {
           id: "internood-community",
           name: "Internood Community",
-          shortDescription: "A global peer network for technologists working at the intersection of food systems, automation, and beverage culture.",
+          shortDescription: "A global fourth-wave community of farmers, business owners, technologists and innovators working at the intersection of agriculture, drink innovation and beverage culture.",
           description: [
-            "Internood Community is a members-only network of 12,400 practitioners — engineers, agronomists, product designers, data scientists, and operations specialists — working across the food technology and beverage automation sectors. Founded in 2044, it has become the primary informal knowledge exchange for the field.",
             "Membership includes: access to the Internood private forum, a monthly digest of pre-publication research, priority tickets to Kahvi 2050 events, and a profile in the community directory. Members regularly collaborate on open-source tooling, share job opportunities, and peer-review each other's technical work.",
             "Applications are reviewed monthly. Applicants are asked to provide a brief professional biography and a short statement of interest. 80% of applications are accepted. Student memberships are available at a reduced rate for registered higher education students."
           ],
@@ -297,11 +277,9 @@ const techno: Narrative = {
         {
           id: "tech-forests",
           name: "Tech Forests",
-          shortDescription: "A distributed citizen science initiative maintaining Finland's experimental agroforestry plots using sensor networks and collective data stewardship.",
+          shortDescription: "A forest ecosystem planted by human technologists and managed by mushrooms.",
           description: [
-            "Tech Forests is a participatory science programme connecting 3,200 volunteer stewards to 47 experimental agroforestry plots distributed across the Finnish archipelago, Lapland, and the Tampere hinterland. Each plot is instrumented with a dense sensor network measuring soil chemistry, microclimate, canopy density, and biodiversity indicators.",
-            "Stewards commit to one monitoring visit per month and contribute observations via the Tech Forests app. All data is processed by the Kahvi Intelligence Engine and published as open datasets quarterly. Three peer-reviewed papers citing Tech Forests data have been published in 2049 alone.",
-            "Participation is free. Stewards receive a monthly data digest for their assigned plot, an annual steward report, and invitation to the yearly in-person gathering. Travel grants are available for stewards travelling more than 150km to participate."
+            ""
           ],
           price: "Free — open enrolment",
           ctaLabel: "Join the Programme",
@@ -314,26 +292,26 @@ const techno: Narrative = {
 const crafted: Narrative = {
   id: "crafted",
   name: "Crafted Future",
-  tagline: "Grown. Brewed. Shared.",
-  description: "A cooperative marketplace rooted in Finnish craft tradition. Every offering is made by hand, grown with care, or built around shared experience — nothing here is scaled beyond what one person can know.",
-  heroSubtext: "Collectively owned — member-governed since 2041",
-  accent: "#5a3f35",
+  tagline: "",
+  description: "A cooperative marketplace rooted in Finnish craft. Coffee is highly valued, not just for its functional properties or scarcity, but for its inherent social properties. The moments in which coffee is consumed are elevated, and time feels stretched. While there is no explicit mention of coffee scarcity, the high prices, the dispensary model, and gratefulness to the producers and pollinators alike, points to a world that is slowly recovering from the harshest effects of climate change. There is no way forward but to create post-extractive systems with space built-in for reflection.",
+  heroSubtext: "Collectively owned and collectively elevated",
+  accent: "#D4B84A",
   secondary: "#5f7a6e",
   feel: "warm",
   categories: [
     {
       id: "services",
       name: "Services",
-      description: "Craft preparation and community services, each rooted in a specific skill, place, or practice. All providers are cooperative members.",
+      description: "",
       offerings: [
         {
           id: "bean-dispensary-2",
           name: "The Bean Dispensary",
-          shortDescription: "A community-owned preparation counter run by rotating member baristas in the heart of Kallio.",
+          shortDescription: "Beans are sold unpackaged in dispensaries run by the Finnish Coffee Roasters Association. The Finnish Coffee Bean Dispensary is a network of 214 certified stores across Finland.",
           description: [
-            "The Bean Dispensary in its Crafted form is a cooperative preparation counter — not a terminal, but a table staffed by a rotating roster of member baristas from the Kahvi 2050 cooperative. Every person behind the counter is a member-owner; tips contribute directly to the cooperative fund.",
-            "The menu changes weekly based on what's available from cooperative-linked growers and roasters. There is no fixed offering — you ask what's good today and you receive an honest answer. Preparation methods are chosen by the barista on shift based on the material at hand.",
-            "The Dispensary operates Tuesday through Sunday, 08:00–16:00. It accepts Kahvi Wallet, cooperative share credits, and cash. Members of the cooperative receive a 15% discount on all purchases. Community events are held in the space on the first Thursday of each month."
+            "Customers bring their own containers or purchase single-use bio-compostable jars at an additional charge.",
+            "Store locations are displayed on the Kahvi 2050 approved vendor map",
+            "Members of the cooperative receive a 15% discount on all purchases. Community events are held in the space on the first Thursday of each month."
           ],
           price: "€4.00–€7.50",
           ctaLabel: "Find Us",
@@ -343,9 +321,9 @@ const crafted: Narrative = {
           name: "KahviTauko Services",
           shortDescription: "A mobile preparation service bringing skilled baristas to workplaces, care homes, and community spaces across the Helsinki region.",
           description: [
-            "KahviTauko — the Finnish word for a coffee break — is a mobile service operated by cooperative members. The service brings a fully equipped preparation setup, a barista, and a carefully chosen selection of cooperative-sourced material to your location.",
-            "Bookings are typically for two-hour slots, during which the barista prepares and serves for your group and is available for conversation about the material, the craft, and the cooperative's work. KahviTauko is particularly popular with care homes, where the ritual and the human connection are as important as the beverage.",
-            "The service covers the Greater Helsinki area. Travel outside this zone is available by arrangement and may carry a supplementary fee. A minimum booking of 10 guests applies. All equipment is transported in a cargo bicycle — zero-emission delivery as standard."
+            "People come to work once a week to enjoy a wholesome coffee and make low threshold social interactions thanks to the expert facilitators.",
+            "Bookings are typically for two-hour slots, during which the barista prepares and serves for the group and is available for conversation about the material, the craft, and the cooperative's work.",
+            "A minimum booking of 4 guests applies. All equipment is transported in a cargo bicycle with zero-emission delivery as standard."
           ],
           price: "€180.00 / 2-hour slot",
           ctaLabel: "Book a Visit",
@@ -355,9 +333,9 @@ const crafted: Narrative = {
           name: "Group Therapy",
           shortDescription: "A facilitated sensory exploration session combining guided tasting, somatic awareness practice, and open conversation.",
           description: [
-            "Group Therapy is a session format developed by cooperative members Marika Koskinen and Juhani Ojala that combines guided sensory tasting with bodywork and facilitated conversation. The name is partly tongue-in-cheek — but the sessions do draw on practices from somatic therapy and community facilitation.",
-            "Sessions run for two and a half hours and are limited to eight participants. The format moves through three preparation styles — typically filter, immersion, and cold — using the same material prepared three ways, with guided attention to the sensory experience at each stage and time for conversation between rounds.",
-            "Group Therapy is not appropriate for those with strong caffeine sensitivity. A non-caffeinated parallel preparation is available on request. Participants are asked to arrive with no strong fragrance. Booking is available for individuals and private groups. A sliding-scale fee structure is available — contact us."
+            "Self-regulation sessions developed by nutritionists, psychologists and social workers to help people build healthier relationships with coffee",
+            "Booking is available for individuals and private groups. A sliding-scale fee structure is available — contact us.",
+            "",
           ],
           price: "€42.00 / person",
           ctaLabel: "Reserve a Place",
@@ -365,11 +343,11 @@ const crafted: Narrative = {
         {
           id: "community-cafe",
           name: "Community Cafe",
-          shortDescription: "A pay-what-you-can cooperative café space open to all, with regular programming and a deeply local character.",
+          shortDescription: "A community-owned café space open to all, with hyperlocal characteristics.",
           description: [
-            "Community Cafe is a semi-permanent space in the Suvilahti district operating on a pay-what-you-can model. There is a suggested contribution of €4 per preparation, but no one is turned away. The space is funded through cooperative surplus, voluntary contributions, and a small grant from the City of Helsinki Cultural Fund.",
-            "The space is open daily from 07:00 to 20:00 and doubles as a venue for cooperative meetings, skill-sharing sessions, language exchanges, repair cafés, and community dinners. The programme is determined monthly by a vote among cooperative members and regular visitors.",
-            "All preparation at the Community Cafe uses cooperative-sourced material. The kitchen is entirely plant-based. Dogs and children are welcome. Wi-Fi is available and shared freely."
+            "Community Cafe is a community-owned space in the Suvilahti district operating on a pay-what-you-can model.",
+            "The space is open daily from 07:00 to 20:00 and doubles as a venue for cooperative meetings, skill-sharing sessions, language exchanges, repair cafés, and community dinners.",
+            "The kitchen is entirely plant-based. Dogs and children are welcome. Wi-Fi is available. There is a suggested contribution of €4 per preparation. The space was bought back by residents after it was abandoned by an Americal coffee chain that became unprofitable in 2041."
           ],
           price: "Pay what you can",
           ctaLabel: "Come In",
@@ -377,11 +355,11 @@ const crafted: Narrative = {
         {
           id: "baristas-choice",
           name: "Barista's Choice",
-          shortDescription: "A subscription service curated entirely by cooperative baristas — no algorithm, no committee, just craft judgment.",
+          shortDescription: "A subscription service curated entirely by cooperative baristas",
           description: [
-            "Barista's Choice is a monthly subscription built around a simple premise: one cooperative barista selects one material, prepares a small roasted sample, writes a personal note about why they chose it, and sends it to subscribers along with suggested preparation parameters.",
-            "The selection changes every month. Subscribers cannot choose — that is the point. The barista may select something they have been working with for months, something that arrived unexpectedly, or something they have strong feelings about. The note that accompanies each selection is typically candid and sometimes funny.",
-            "Subscriptions run for a minimum of three months. Cancellation requires 14 days' notice before the next dispatch. Baristas are paid for their selection work and their writing. Subscribers who wish to respond to a barista's note may do so via the cooperative forum."
+            "Barista's Choice is a monthly drop built around a simple premise: baristas prepare a small roasted sample with a  personal note about the it.",
+            "The note that accompanies each selection is typically candid and reflects the personality of the barista as much as the sample itself.",
+            "Coffee enthusiasts line up for the release of  limited edition coffee blends by their favourite barista, the way people used to wait in line for the new iphone back in the 020's."
           ],
           price: "€28.00 / month",
           ctaLabel: "Subscribe",
@@ -391,16 +369,16 @@ const crafted: Narrative = {
     {
       id: "events",
       name: "Events",
-      description: "Gatherings, rituals, and shared experiences organised by and for the cooperative community. Participation over performance.",
+      description: "",
       offerings: [
         {
           id: "coffee-ritual-workshops",
           name: "Coffee Ritual Workshops",
           shortDescription: "Small-group hands-on sessions exploring historical and contemporary preparation rituals from Finnish and global traditions.",
           description: [
-            "Coffee Ritual Workshops are hosted by cooperative members with specialist knowledge of preparation traditions — Ethiopian ceremony, Nordic filter culture, Levantine cardamom preparation, and others. Each workshop focuses on one tradition and runs for approximately three hours.",
-            "Participants prepare and drink alongside the facilitator, handling the equipment, measuring and adjusting, and discussing the cultural context of what they are doing. The workshops are deliberately unhurried. There is usually a meal or a shared snack at some point.",
-            "Workshops are held at the cooperative's space in Kallio and at partner venues across the city. A full schedule is published at the start of each season. Workshops are limited to 12 participants. Materials are included in the ticket price. Dietary requirements are accommodated with advance notice."
+            "Coffee Ritual Workshops are hosted by cooperative members with specialist knowledge of preparation traditions such as Ethiopian ceremony, Nordic filter culture, Turkish preparation, and others. Each workshop focuses on one tradition and runs for approximately three hours.",
+            "",
+            "Workshops are held at the Roasters Association's Bean Dispensaries. A full schedule is published at the start of each season."
           ],
           price: "€38.00 / person",
           ctaLabel: "Browse the Schedule",
@@ -408,11 +386,11 @@ const crafted: Narrative = {
         {
           id: "rite-of-passage",
           name: "Rite of Passage",
-          shortDescription: "An annual multi-day gathering marking the harvest season — part celebration, part skill exchange, part cooperative assembly.",
+          shortDescription: "Children brew their first cup of coffee in the wilderness when they turn 16, in a ceremony with loved ones who bless them and impart words of wisdom.",
           description: [
-            "Rite of Passage is the cooperative's annual gathering, held over three days each October at a site chosen by member vote. The event combines harvest celebration, skill-sharing sessions, a formal cooperative assembly, open preparation spaces, and an evening programme of music, storytelling, and community.",
-            "The gathering is open to members and their guests. A limited number of public tickets are available each year via ballot. The programme is set by a volunteer organising committee drawn from across the cooperative membership.",
-            "Participants camp on site or arrange their own accommodation in the local area. The cooperative provides a communal kitchen and dining tent. Children are welcome and a supervised programme is available for those aged 5–12. Dogs are welcome in designated areas."
+            "",
+            "",
+            ""
           ],
           price: "€85.00 / 3 days",
           ctaLabel: "Apply for a Place",
@@ -420,11 +398,11 @@ const crafted: Narrative = {
         {
           id: "cynical-trials",
           name: "Cynical Trials",
-          shortDescription: "A competitive blind-tasting tournament with a deliberately irreverent format. All skill levels welcome.",
+          shortDescription: "The sampling programme gives people the opportunity to try roasts and blends of liberica to develop its flavour. They get feedback, you get free coffee. The more interesting the feeback, the more coffee you get to try. ",
           description: [
-            "Cynical Trials is a blind-tasting competition with a twist: the judging criteria change with each round, the materials are undisclosed until after judging, and the scoring system is redesigned each year by the previous year's winner. The result is a tournament that rewards genuine sensory acuity while actively resisting the kind of reverence that makes these things tedious.",
-            "The event runs over one day and is open to all — no prior competitive experience is required or advantaged. Participants taste, score, and discuss. Past materials have included preparations from unexpected origins, unusual processing methods, and at least one round featuring something that was not coffee at all.",
-            "Entry includes all tasting materials, a printed tournament booklet, lunch, and an evening meal. Previous winners receive a commemorative object of the outgoing winner's choosing. The event sells out within hours of opening — join the notification list early."
+            "",
+            "",
+            ""
           ],
           price: "€55.00 / person",
           ctaLabel: "Join the Notification List",
@@ -434,16 +412,16 @@ const crafted: Narrative = {
     {
       id: "community",
       name: "Community",
-      description: "The membership and exchange structures that hold the cooperative together. Join, participate, contribute.",
+      description: "",
       offerings: [
         {
           id: "barista-exchange",
           name: "Barista Exchange",
-          shortDescription: "A structured exchange programme placing cooperative baristas at partner establishments across Europe for 2–6 week residencies.",
+          shortDescription: "An cultural exchange programme for baristas and farmers alike, funded by the EU. Looks great on any resumé.",
           description: [
-            "Barista Exchange is a residency programme connecting Kahvi 2050 cooperative members with partner preparation spaces across Europe. Participating baristas travel to a partner for a period of 2–6 weeks, work alongside the local team, contribute their skills and perspective, and return with new knowledge and relationships.",
-            "The Exchange is reciprocal: hosting partners send a barista to Helsinki for a corresponding period. Host cooperatives cover accommodation; travel costs are shared between the cooperative and the participant. Language is not a barrier — the programme has operated successfully in 11 countries with participants who share no common language.",
-            "Applications are open twice yearly. Priority is given to members who have not previously participated. The Exchange has been running since 2043 and has generated lasting friendships, cross-border collaborative projects, and at least two marriages."
+            "",
+            "",
+            ""
           ],
           price: "Cooperative member benefit",
           ctaLabel: "Apply for the Exchange",
