@@ -92,7 +92,7 @@ const regulated: Narrative = {
             "Store locations are displayed on the Kahvi 2050 approved vendor map."
           ],
           price: "€3.20 / serving",
-
+          image: "regulated/services/bean-dispensary.png",
           ctaLabel: "Find Nearest Terminal",
         },
         {
