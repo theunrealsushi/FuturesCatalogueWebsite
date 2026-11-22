@@ -4,9 +4,9 @@ import { narrativeMap, getOffering, getNarrativeCategory } from "../data/content
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 import Breadcrumb from "../components/Breadcrumb";
-import ImagePlaceholder from "../components/ImagePlaceholder";
-import { resolveOfferingImage } from "../data/offeringImages";
-import { resolve } from "path";
+import ImagePlaceholder, { resolveOfferingImage} from "../components/ImagePlaceholder";
+
+
 
 const MONO = "'SF Mono', 'Cascadia Code', Consolas, ui-monospace, monospace";
 const HEADING = "'Sora', -apple-system, BlinkMacSystemFont, sans-serif";

@@ -1,3 +1,23 @@
+
+/** Eagerly load offering images under src/assets/offerings/ */
+const offeringImageModules = import.meta.glob(
+  "../assets/offerings/*/.{png,jpg,jpeg,webp,gif}",
+  { eager: true, import: "default" },
+) as Record<string, string>
+
+/**
+ * Resolve an offering image path from content.ts.
+ * Example: "regulated/services/bean-dispensary.jpg"
+ */
+export function resolveOfferingImage(image?: string): string | undefined {
+  if (!image) return undefined
+  const normalized = image.replace(/^\//, "")
+  const match = Object.entries(offeringImageModules).find(([key]) =>
+    key.replace(/\\/g, "/").endsWith(/assets/offerings/${normalized}),
+  )
+  return match?.[1]
+}
+
 interface ImagePlaceholderProps {
   className?: string;
   label?: string;

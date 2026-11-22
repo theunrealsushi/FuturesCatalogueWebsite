@@ -1,7 +1,7 @@
 import { Link } from "react-router";
-import ImagePlaceholder from "./ImagePlaceholder";
+import ImagePlaceholder, { resolveOfferingImage } from "./ImagePlaceholder";
 import type { Offering } from "../data/content";
-import { resolveOfferingImage } from "../data/offeringImages";
+
 
 const tagColors: Record<string, string> = {
   Bestseller: "#d4b84a",

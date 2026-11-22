@@ -3,8 +3,8 @@ import { Link, useParams, Navigate } from "react-router";
 import { narrativeMap } from "../data/content";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
-import ImagePlaceholder from "../components/ImagePlaceholder";
-import { resolveOfferingImage } from "../data/offeringImages";
+import ImagePlaceholder, { resolveOfferingImage } from "../components/ImagePlaceholder";
+
 
 // ── Typewriter ───────────────────────────────────────────────────────────────
 function useTypewriter(lines: string[], speed = 45, pause = 1800) {
