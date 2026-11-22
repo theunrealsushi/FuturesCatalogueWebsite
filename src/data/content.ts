@@ -1,3 +1,5 @@
+import beanDispensaryImage from "../assets/offerings/regulated/services/bean-dispensary.png";
+
 export type Tag = "Bestseller" | "New" | "Limited" | "Certified" | "Featured" | "Exclusive" | "Seasonal" | "Community Pick";
 
 export interface Offering {
@@ -92,7 +94,7 @@ const regulated: Narrative = {
             "Store locations are displayed on the Kahvi 2050 approved vendor map."
           ],
           price: "€3.20 / serving",
-          image: "regulated/services/bean-dispensary.png",
+          image: beanDispensaryImage,
           ctaLabel: "Find Nearest Terminal",
         },
         {

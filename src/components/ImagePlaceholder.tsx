@@ -1,3 +1,40 @@
+/** Eagerly load offering images under src/assets/offerings/ */
+const offeringImageModules = import.meta.glob(
+  "../assets/offerings/*/.{png,jpg,jpeg,webp,gif}",
+  { eager: true, import: "default" },
+) as Record<string, string>
+
+/**
+ * Resolve an offering image path from content.ts.
+ * Example: "regulated/services/bean-dispensary.jpg"
+ */
+function isBundledAssetUrl(image: string): boolean {
+  return (
+    image.startsWith("/") ||
+    image.startsWith("http://") ||
+    image.startsWith("https://") ||
+    image.startsWith("data:")
+  )
+}
+
+export function resolveOfferingImage(image?: string): string | undefined {
+  if (!image) return undefined
+  if (isBundledAssetUrl(image)) return image
+
+  const normalized = image
+    .replace(/^\//, "")
+    .replace(/^src\/assets\/offerings\//, "")
+
+  const match = Object.entries(offeringImageModules).find(([key]) => {
+    const path = key.replace(/\\/g, "/")
+    return (
+      path.endsWith(/assets/offerings/${normalized}) ||
+      path.endsWith(/${normalized})
+    )
+  })
+  return match?.[1]
+}
+
 interface ImagePlaceholderProps {
   className?: string;
   label?: string;
