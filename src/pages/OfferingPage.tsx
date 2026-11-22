@@ -455,7 +455,7 @@ export default function OfferingPage() {
   const isTechno = narrativeId === "techno";
   const otherOfferings = category.offerings.filter((o) => o.id !== offeringId).slice(0, 3);
 
-  const bg = isRegulated ? "#0F172A" : isTechno ? "#0F172A" : "#1e2530";
+  const bg = isTechno ? "#0F172A" : "#1e2530";
 
   function addToCart() {
     setCartCount((n) => n + 1);
