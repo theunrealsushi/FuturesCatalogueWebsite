@@ -49,7 +49,6 @@ function BlinkCursor({ color = "#38BDF8" }: { color?: string }) {
 
 // ── Animated price pill ──────────────────────────────────────────────────────
 const MONO = "'SF Mono', 'Cascadia Code', Consolas, ui-monospace, monospace";
-const HEADING = "'Sora', -apple-system, BlinkMacSystemFont, sans-serif";
 const CYAN = "rgba(56,189,248,0.25)";
 const CYAN_T = "#38BDF8";
 
@@ -65,7 +64,7 @@ function PricePill() {
       className="inline-flex items-center gap-2 px-3 py-1 text-xs shrink-0"
       style={{
         backgroundColor: "rgba(56,189,248,0.08)",
-        border: `1px solid ${CYAN}`,
+        border: 1px solid ${CYAN},
         borderRadius: "2px",
         fontFamily: MONO,
         color: CYAN_T,
@@ -131,41 +130,32 @@ export default function NarrativeHome() {
       </div>
 
       {/* Hero */}
-      <div className="relative overflow-hidden" style={{ borderBottom: `1px solid ${borderColor}` }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-16 sm:py-24 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div>
-            <div
-              className="text-[14px] font-semibold tracking-[0.3em] uppercase mb-6"
-              style={{ color: narrative.accent, fontFamily: isTechno ? MONO : undefined }}
-            >
-              {narrative.heroSubtext}
-            </div>
-            <h1
-              className="text-3xl sm:text-5xl font-semibold text-[#e8e6e1] mb-6 leading-tight"
-              style={{ letterSpacing: "-0.02em" }}
-            >
-              {narrative.name}
-            </h1>
-            <p className="text-sm text-[#e8e6e1]/80 leading-relaxed max-w-md" style={{ fontFamily: "'Roboto Mono', monospace", textAlign: "justify" }}>
-              {narrative.description}
-            </p>
+      <div className="relative overflow-hidden" style={{ borderBottom: 1px solid ${borderColor} }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-16 sm:py-24">
+          <div
+            className="text-[10px] font-semibold tracking-[0.3em] uppercase mb-6"
+            style={{ color: narrative.accent, fontFamily: isTechno ? MONO : undefined }}
+          >
+            {narrative.heroSubtext}
           </div>
-          <div className="relative">
-            <ImagePlaceholder aspect="hero" label="Hero image" className="rounded-sm" />
-            <div
-              className="absolute bottom-0 left-0 right-0 h-1/3"
-              style={{ background: `linear-gradient(to top, ${bg}, transparent)` }}
-            />
-          </div>
+          <h1
+            className="text-3xl sm:text-5xl font-semibold text-[#e8e6e1] mb-6 leading-tight"
+            style={{ letterSpacing: "-0.02em" }}
+          >
+            {narrative.name}
+          </h1>
+          <p className="text-sm text-[#e8e6e1]/50 leading-relaxed max-w-3xl" style={{ fontFamily: "'Roboto Mono', monospace", textAlign: "justify" }}>
+            {narrative.description}
+          </p>
         </div>
       </div>
 
       {/* Tabbed catalogue */}
-      <div style={{ borderTop: `1px solid ${borderColor}` }}>
+      <div style={{ borderTop: 1px solid ${borderColor} }}>
         {/* Tab bar */}
         <div
           className="sticky z-30 flex"
-          style={{ top: isTechno ? "88px" : "57px", borderBottom: `1px solid ${borderColor}`, backgroundColor: bg }}
+          style={{ top: isTechno ? "88px" : "57px", borderBottom: 1px solid ${borderColor}, backgroundColor: bg }}
         >
           {narrative.categories.map((cat, i) => {
             const isActive = i === activeTab;
@@ -173,7 +163,7 @@ export default function NarrativeHome() {
               <button
                 key={cat.id}
                 onClick={() => setActiveTab(i)}
-                className="px-6 py-4 text-[14px] font-semibold uppercase tracking-widest transition-colors relative"
+                className="px-6 py-4 text-xs font-semibold uppercase tracking-widest transition-colors relative"
                 style={{
                   fontFamily: MONO,
                   color: isActive ? (isTechno ? CYAN_T : narrative.accent) : "rgba(232,230,225,0.35)",
@@ -194,27 +184,30 @@ export default function NarrativeHome() {
           })}
         </div>
 
- {/* Active tab content */}
+        {/* Active tab content */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12">
+          <p className="text-xs text-[#e8e6e1]/35 mb-10 max-w-2xl" style={{ fontFamily: isTechno ? MONO : undefined }}>
+            {activeCat.description}
+          </p>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {activeCat.offerings.map((offering) => (
               <Link
                 key={offering.id}
-                to={`/${narrativeId}/${activeCat.id}/${offering.id}`}
+                to={/${narrativeId}/${activeCat.id}/${offering.id}}
                 className="group block"
               >
                 <div
                   className="relative rounded-sm overflow-hidden mb-3"
-                  style={{ border: `1px solid ${borderColor}` }}
+                  style={{ border: 1px solid ${borderColor} }}
                 >
                   <ImagePlaceholder aspect="wide" label="Offering image" />
                   {offering.tag && (
                     <span
-                      className="absolute top-2.5 left-2.5 text-[14px] font-semibold tracking-widest uppercase px-2 py-0.5 rounded-sm"
+                      className="absolute top-2.5 left-2.5 text-[10px] font-semibold tracking-widest uppercase px-2 py-0.5 rounded-sm"
                       style={{
                         backgroundColor: isTechno ? "rgba(56,189,248,0.15)" : narrative.accent,
                         color: isTechno ? CYAN_T : "#1e2530",
-                        border: isTechno ? `1px solid ${CYAN}` : undefined,
+                        border: isTechno ? 1px solid ${CYAN} : undefined,
                         fontFamily: isTechno ? MONO : undefined,
                       }}
                     >
@@ -222,16 +215,10 @@ export default function NarrativeHome() {
                     </span>
                   )}
                 </div>
-                <h3
-                  className="text-sm font-semibold text-[#e8e6e1] mb-1 group-hover:opacity-80 transition-opacity"
-                  style={{ fontFamily: HEADING }}
-                >
+                <h3 className="text-sm font-semibold text-[#e8e6e1] mb-1 group-hover:opacity-80 transition-opacity">
                   {offering.name}
                 </h3>
-                <p
-                  className="text-[14px] text-[#e8e6e1]/60 mb-2 leading-relaxed"
-                  style={{ fontFamily: "'Roboto Mono', monospace" }}
-                >
+                <p className="text-xs text-[#e8e6e1]/40 mb-2 leading-relaxed line-clamp-2">
                   {offering.shortDescription}
                 </p>
               </Link>
@@ -244,8 +231,8 @@ export default function NarrativeHome() {
       <div
         className="py-10"
         style={{
-          borderTop: `1px solid ${isTechno ? CYAN : "#3a4450"}`,
-          borderBottom: `1px solid ${isTechno ? CYAN : "#3a4450"}`,
+          borderTop: 1px solid ${isTechno ? CYAN : "#3a4450"},
+          borderBottom: 1px solid ${isTechno ? CYAN : "#3a4450"},
           backgroundColor: isTechno ? "rgba(56,189,248,0.03)" : narrative.accent + "10",
         }}
       >
@@ -254,7 +241,7 @@ export default function NarrativeHome() {
             className="text-lg sm:text-2xl font-medium"
             style={{ color: isTechno ? CYAN_T : narrative.secondary, fontFamily: isTechno ? MONO : undefined }}
           >
-            {narrative.tagline}
+            {isTechno ? // "${narrative.tagline}" // : "${narrative.tagline}"}
           </p>
           <Link
             to="/"
