@@ -4,8 +4,8 @@ import { narrativeMap, getOffering, getNarrativeCategory } from "../data/content
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 import Breadcrumb from "../components/Breadcrumb";
-/*import ImagePlaceholder from "../components/ImagePlaceholder"; */
-import OfferingImage from "../components/OfferingImage";
+import ImagePlaceholder from "../components/ImagePlaceholder";
+
 
 const MONO = "'SF Mono', 'Cascadia Code', Consolas, ui-monospace, monospace";
 const HEADING = "'Sora', -apple-system, BlinkMacSystemFont, sans-serif";
@@ -497,13 +497,7 @@ export default function OfferingPage() {
           {/* Image */}
           <div>
             <div className="relative rounded-sm overflow-hidden">
-              <OfferingImage
-                image={offering.image}
-                alt={offering.name}
-                aspect="square"
-                label="Primary Image"
-                className="w-full"
-              />
+              <ImagePlaceholder aspect="square" label="Primary image" className="w-full" />
               {offering.tag && (
                 <span
                   className="absolute top-4 left-4 text-[10px] font-semibold tracking-widest uppercase px-2.5 py-1 rounded-sm"
@@ -685,7 +679,7 @@ export default function OfferingPage() {
               {otherOfferings.map((o) => (
                 <Link key={o.id} to={`/${narrativeId}/${categoryId}/${o.id}`} className="group block">
                   <div className="rounded-sm overflow-hidden mb-3" style={{ border: `1px solid ${isRegulated ? "rgba(255,255,255,0.15)" : "#3a4450"}` }}>
-                    <OfferingImage image={o.image} alt={o.name} aspect="wide"/>
+                    <ImagePlaceholder aspect="wide" label="Offering image" />
                   </div>
                   <h3 className="text-xs font-semibold text-[#e8e6e1] mb-1 group-hover:opacity-80 transition-opacity">
                     {o.name}
