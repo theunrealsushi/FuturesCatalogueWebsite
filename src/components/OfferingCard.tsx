@@ -1,6 +1,7 @@
 import { Link } from "react-router";
 import ImagePlaceholder from "./ImagePlaceholder";
 import type { Offering } from "../data/content";
+import { resolveOfferingImage } from "../data/offeringImages";
 
 const tagColors: Record<string, string> = {
   Bestseller: "#d4b84a",
@@ -27,7 +28,7 @@ export default function OfferingCard({ offering, href, accent }: OfferingCardPro
       style={{ backgroundColor: "#1e2530" }}
     >
       <div className="relative">
-        <ImagePlaceholder aspect="wide" label="Product image" />
+        <ImagePlaceholder aspect="wide" label="Product image" src={resolveOfferingImage(offering.id)} alt={offering.name} />
         {offering.tag && (
           <span
             className="absolute top-2.5 left-2.5 text-[10px] font-semibold tracking-widest uppercase px-2 py-0.5 rounded-sm"

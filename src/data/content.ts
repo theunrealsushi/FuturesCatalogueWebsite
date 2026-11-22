@@ -9,6 +9,7 @@ export interface Offering {
   tag?: Tag;
   ctaLabel: string;
   ingredients?: string[];
+  image?: string;
 }
 
 export interface Category {
@@ -85,6 +86,7 @@ const regulated: Narrative = {
         {
           id: "bean-dispensary",
           name: "The Bean Dispensary",
+          image: "regulated/services/bean-dispensary.png",
           shortDescription: "Beans are sold unpackaged in dispensaries run by the Finnish Coffee Roasters Association.",
           description: [
             "The Finnish Coffee Bean Dispensary is a network of 214 certified stores across Finland.",

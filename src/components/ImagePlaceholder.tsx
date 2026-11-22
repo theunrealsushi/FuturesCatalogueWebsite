@@ -2,6 +2,8 @@ interface ImagePlaceholderProps {
   className?: string;
   label?: string;
   aspect?: "square" | "wide" | "tall" | "hero";
+  src?: string;
+  alt?: string;
 }
 
 const aspects = {
@@ -11,10 +13,26 @@ const aspects = {
   hero: "aspect-[16/7]",
 };
 
-export default function ImagePlaceholder({ className = "", label = "Image", aspect = "wide" }: ImagePlaceholderProps) {
+export default function ImagePlaceholder({
+  className = "",
+  label = "Image",
+  aspect = "wide",
+  src,
+  alt,
+}: ImagePlaceholderProps) {
+  if (src) {
+    return (
+      <img
+        src={src}
+        alt={alt ?? label}
+        className={${aspects[aspect]} ${className} w-full object-cover bg-[#2a3240]}
+      />
+    );
+  }
+
   return (
     <div
-      className={`${aspects[aspect]} ${className} flex flex-col items-center justify-center gap-2 bg-[#2a3240] border border-[#3a4450] relative overflow-hidden`}
+      className={${aspects[aspect]} ${className} flex flex-col items-center justify-center gap-2 bg-[#2a3240] border border-[#3a4450] relative overflow-hidden}
     >
       <div
         className="absolute inset-0 opacity-10"
