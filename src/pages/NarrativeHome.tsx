@@ -3,8 +3,7 @@ import { Link, useParams, Navigate } from "react-router";
 import { narrativeMap } from "../data/content";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
-import ImagePlaceholder, { resolveOfferingImage } from "../components/ImagePlaceholder";
-
+import ImagePlaceholder from "../components/ImagePlaceholder";
 
 // ── Typewriter ───────────────────────────────────────────────────────────────
 function useTypewriter(lines: string[], speed = 45, pause = 1800) {
@@ -208,7 +207,7 @@ export default function NarrativeHome() {
                   className="relative rounded-sm overflow-hidden mb-3"
                   style={{ border: `1px solid ${borderColor}` }}
                 >
-                  <ImagePlaceholder aspect="wide" label="Offering image" src={resolveOfferingImage(offering.id)} alt={offering.name} />
+                  <ImagePlaceholder aspect="wide" label="Offering image" />
                   {offering.tag && (
                     <span
                       className="absolute top-2.5 left-2.5 text-[14px] font-semibold tracking-widest uppercase px-2 py-0.5 rounded-sm"
