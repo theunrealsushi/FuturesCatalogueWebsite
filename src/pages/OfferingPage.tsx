@@ -402,21 +402,21 @@ function InlineDossier({ description, shortDescription, accentColor, ingredients
         } as object}
       >
         {fullText}
-          {ingredients && ingredients.length > 0 && (
-        <div className="mt-6 pt-5" style={{ borderTop: "1px solid rgba(255,255,255,0.08)" }}>
-          <div className="text-[10px] tracking-[0.25em] uppercase mb-3" style={{ color: accentColor, fontFamily: MONO }}>
-            Ingredient Declaration // EU Reg. 2047/NUT-06
+        {ingredients && ingredients.length > 0 && (
+          <div className="mt-6 pt-5" style={{ borderTop: "1px solid rgba(255,255,255,0.08)" }}>
+            <div className="text-[10px] tracking-[0.25em] uppercase mb-3" style={{ color: accentColor, fontFamily: MONO }}>
+              Ingredient Declaration // EU Reg. 2047/NUT-06
+            </div>
+            <ul className="space-y-1.5">
+              {ingredients.map((item, i) => (
+                <li key={i} className="flex gap-2 text-xs" style={{ color: "rgba(232,230,225,0.45)", fontFamily: MONO }}>
+                  <span style={{ color: accentColor, opacity: 0.5 }}>{String(i + 1).padStart(2, "0")}.</span>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
           </div>
-          <ul className="space-y-1.5">
-            {ingredients.map((item, i) => (
-              <li key={i} className="flex gap-2 text-xs" style={{ color: "rgba(232,230,225,0.45)", fontFamily: MONO }}>
-                <span style={{ color: accentColor, opacity: 0.5 }}>{String(i + 1).padStart(2, "0")}.</span>
-                <span>{item}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
-      )}
+        )}
       </div>
       <button
         onClick={() => setExpanded((v) => !v)}
@@ -425,7 +425,6 @@ function InlineDossier({ description, shortDescription, accentColor, ingredients
       >
         {expanded ? "[ − COLLAPSE ]" : "[ + EXPAND DOSSIER ]"}
       </button>
-    
     </div>
   );
 }
@@ -455,7 +454,7 @@ export default function OfferingPage() {
   const isTechno = narrativeId === "techno";
   const otherOfferings = category.offerings.filter((o) => o.id !== offeringId).slice(0, 3);
 
-  const bg = isRegulated ? "#0F172A" : isTechno ? "#0F172A" : "#1e2530";
+  const bg = isTechno ? "#0F172A" : "#1e2530";
 
   function addToCart() {
     setCartCount((n) => n + 1);
@@ -495,8 +494,16 @@ export default function OfferingPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
           {/* Image */}
           <div>
-            <div className="relative rounded-sm overflow-hidden">
-              <ImagePlaceholder aspect="square" label="Primary image" className="w-full" />
+            <div className="relative rounded-sm overflow-hidden aspect-square">
+              {offering.image ? (
+                <img
+                  src={`${import.meta.env.BASE_URL}${offering.image}`}
+                  alt={offering.name}
+                  className="w-full h-full object-cover"
+                />
+              ) : (
+                <ImagePlaceholder aspect="square" label="Primary image" className="w-full" />
+              )}
               {offering.tag && (
                 <span
                   className="absolute top-4 left-4 text-[10px] font-semibold tracking-widest uppercase px-2.5 py-1 rounded-sm"
@@ -579,7 +586,6 @@ export default function OfferingPage() {
                   border: `1px solid ${CYAN}`,
                   borderRadius: "2px",
                   letterSpacing: "0.12em",
-                  transition: "background-color 300ms ease",
                 }}
               >
                 {cartFlash ? `✓ ADDED TO CART (${cartCount})` : `[ ADD TO CART — ${offering.price} ]`}
@@ -677,8 +683,16 @@ export default function OfferingPage() {
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
               {otherOfferings.map((o) => (
                 <Link key={o.id} to={`/${narrativeId}/${categoryId}/${o.id}`} className="group block">
-                  <div className="rounded-sm overflow-hidden mb-3" style={{ border: `1px solid ${isRegulated ? "rgba(255,255,255,0.15)" : "#3a4450"}` }}>
-                    <ImagePlaceholder aspect="wide" label="Offering image" />
+                  <div className="rounded-sm overflow-hidden aspect-video mb-3" style={{ border: `1px solid ${isRegulated ? "rgba(255,255,255,0.15)" : "#3a4450"}` }}>
+                    {o.image ? (
+                      <img
+                        src={`${import.meta.env.BASE_URL}${o.image}`}
+                        alt={o.name}
+                        className="w-full h-full object-cover"
+                      />
+                    ) : (
+                      <ImagePlaceholder aspect="wide" label="Offering image" />
+                    )}
                   </div>
                   <h3 className="text-xs font-semibold text-[#e8e6e1] mb-1 group-hover:opacity-80 transition-opacity">
                     {o.name}
