@@ -1,3 +1,19 @@
+import { resolveOfferingImagePath } from "../data/offeringImages";
+
+export function resolveOfferingImage(image?: string): string | undefined {
+  if (!image) return undefined;
+  if (
+    image.startsWith("/") ||
+    image.startsWith("http://") ||
+    image.startsWith("https://")
+    image.startsWith("data:")
+  )
+  {
+    return image
+  }
+  return resolveOfferingImagePath(image)
+}
+
 interface ImagePlaceholderProps {
   className?: string;
   label?: string;

@@ -33,10 +33,7 @@ export default function Footer({ accent = "#5f7a6e" }: FooterProps) {
           <div>
             <div className="text-xs font-semibold tracking-widest uppercase text-[#e8e6e1]/30 mb-3">Design</div>
             <ul className="space-y-2 text-xs text-[#e8e6e1]/50">
-              <li><span className="cursor-default">About the Kahvi 2050 Project</span></li>
-              <li><span className="cursor-default">About Sushmita Charlu</span></li>
-              <li><span className="cursor-default">Contact</span></li>
-            
+              <li><span className="cursor-default">About the Kahvi 2050 Project</span></li>            
             </ul>
           </div>
         </div>
