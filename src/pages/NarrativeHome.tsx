@@ -151,6 +151,13 @@ export default function NarrativeHome() {
               {narrative.description}
             </p>
           </div>
+          <div className="relative">
+            <ImagePlaceholder aspect="hero" label="Hero image" className="rounded-sm" />
+            <div
+              className="absolute bottom-0 left-0 right-0 h-1/3"
+              style={{ background: `linear-gradient(to top, ${bg}, transparent)` }}
+            />
+          </div>
         </div>
       </div>
 
