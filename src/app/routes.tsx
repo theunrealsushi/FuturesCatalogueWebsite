@@ -21,4 +21,6 @@ export const router = createBrowserRouter([
     path: "/:narrativeId/:categoryId/:offeringId",
     Component: OfferingPage,
   },
-]);
+],
+{ basename: import.meta.env.BASE_URL }
+);
