@@ -1,3 +1,5 @@
+/* This is a placeholder message from atulya */
+
 import { useState, useEffect } from "react";
 import { Link, useParams, Navigate } from "react-router";
 import { narrativeMap } from "../data/content";
