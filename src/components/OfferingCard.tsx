@@ -19,6 +19,7 @@ interface OfferingCardProps {
   accent: string;
 }
 
+
 export default function OfferingCard({ offering, href, accent }: OfferingCardProps) {
   return (
     <Link
