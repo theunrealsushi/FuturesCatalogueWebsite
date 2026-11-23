@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from "react";
 import { Link, useParams, Navigate } from "react-router";
 import { narrativeMap } from "../data/content";
@@ -131,38 +132,27 @@ export default function NarrativeHome() {
       </div>
 
       {/* Hero */}
-      <div
-        className="relative overflow-hidden"
-        style={{ borderBottom: `1px solid ${borderColor}` }}
-      >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
-          <div
-            className="text-[10px] font-semibold tracking-[0.3em] uppercase mb-6"
-            style={{
-              color: narrative.accent,
-              fontFamily: isTechno ? MONO : undefined,
-            }}
-          >
-            {narrative.heroSubtext}
+      <div className="relative overflow-hidden" style={{ borderBottom: `1px solid ${borderColor}` }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-16 sm:py-24 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <div
+              className="text-[14px] font-semibold tracking-[0.3em] uppercase mb-6"
+              style={{ color: narrative.accent, fontFamily: isTechno ? MONO : undefined }}
+            >
+              {narrative.heroSubtext}
+            </div>
+            <h1
+              className="text-3xl sm:text-5xl font-semibold text-[#e8e6e1] mb-6 leading-tight"
+              style={{ letterSpacing: "-0.02em" }}
+            >
+              {narrative.name}
+            </h1>
+            <p className="text-sm text-[#e8e6e1]/80 leading-relaxed max-w-md" style={{ fontFamily: "'Roboto Mono', monospace", textAlign: "justify" }}>
+              {narrative.description}
+            </p>
           </div>
-          <h1
-            className="text-3xl sm:text-5xl font-semibold text-[#e8e6e1] mb-6 leading-tight"
-            style={{ letterSpacing: "-0.02em" }}
-          >
-            {narrative.name}
-          </h1>
-          <p
-            className="text-sm text-[#e8e6e1]/50 leading-relaxed max-w-5xl"
-            style={{
-              fontFamily: "'Roboto Mono', monospace",
-              textAlign: "justify",
-            }}
-          >
-            {narrative.description}
-          </p>
         </div>
       </div>
-
 
       {/* Tabbed catalogue */}
       <div style={{ borderTop: `1px solid ${borderColor}` }}>
